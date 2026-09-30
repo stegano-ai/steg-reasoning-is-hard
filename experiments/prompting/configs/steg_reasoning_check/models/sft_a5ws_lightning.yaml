@@ -1,0 +1,9 @@
+# a5ws steg-reasoning checkpoint for the errinj harness. NOTE: currently the 2x-cap
+# final checkpoint (pipeline debugging); update model_path to the 10x crossing checkpoint
+# before generating the REAL cells. Compose fragment, not runnable alone.
+name: sft_a5ws_lightning
+function_kwargs:
+  sampler:
+    base_model: nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
+    renderer_name: nemotron3_ultra_disable_thinking
+    model_path: tinker://af736cd6-0e6a-57f3-aca8-baba2065b066:train:0/sampler_weights/final

@@ -1,0 +1,17 @@
+# Relaunch of the a5ws messaging Lightning run: the original crashed at ~step 600 with
+# ENOSPC when the root disk filled (2026-08-15); restarts from scratch.
+common_root:
+  - configs/base.yaml
+  - configs/model_sweep/condition_steg_messaging_a5ws.yaml
+
+experiments:
+  - config:
+      name: steg_messaging_a5ws_nemotron35_lightning
+      function_kwargs:
+        model_name: "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
+        renderer_name: nemotron3_ultra_disable_thinking
+        sft:
+          learning_rate: 1.219e-4
+
+common_patch:
+  - wandb_group: model_sweep/steg_messaging_a5ws

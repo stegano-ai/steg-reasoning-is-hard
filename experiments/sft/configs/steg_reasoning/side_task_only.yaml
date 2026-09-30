@@ -1,0 +1,28 @@
+common_root: configs/base.yaml
+
+experiments:
+  - config:
+      name: sft_side_task_only_summod3
+      log_file_path: results/side_task_only/RUN_NAME/logs.txt
+      save_config_path: results/side_task_only/RUN_NAME/config.yaml
+      function_kwargs:
+        log_path: results/side_task_only/RUN_NAME
+        max_tokens: 512
+        sft:
+          save_every: 500
+        main_task:
+          type: side_task_direct
+          n_train: 8000
+          n_test: 2000
+        side_task:
+          type: rolling_mod_sum
+          n_samples: 10000
+          seq_length: 9
+          operand_range: 10
+          modulus: 3
+          final_only: true
+        task_prompt: |
+          {SIDE_TASK_EXPLANATION}
+
+          Your input: {SIDE_INPUT}
+          Output only the final result as a single digit.

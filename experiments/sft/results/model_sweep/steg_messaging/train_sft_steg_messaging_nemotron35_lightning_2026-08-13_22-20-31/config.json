@@ -1,0 +1,38 @@
+{
+  "log_path": "results/model_sweep/steg_messaging/train_sft_steg_messaging_nemotron35_lightning_2026-08-13_22-20-31",
+  "model_name": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "recipe_name": "steganography_benchmark_sft",
+  "load_checkpoint_path": null,
+  "renderer_name": "nemotron3_ultra_disable_thinking",
+  "dataset_builder": {},
+  "learning_rate": 0.0001219,
+  "lr_schedule": "constant",
+  "num_epochs": 1,
+  "lora_rank": 32,
+  "base_url": null,
+  "evaluator_builders": [
+    {},
+    {}
+  ],
+  "infrequent_evaluator_builders": [
+    {}
+  ],
+  "save_every": 500,
+  "save_every_tokens": 0,
+  "save_every_seconds": 0.0,
+  "eval_every": 250,
+  "infrequent_eval_every": 100,
+  "ttl_seconds": 604800,
+  "rolling_save_every": 0,
+  "rolling_ttl_seconds": 7200,
+  "async_periodic_saves": false,
+  "adam_beta1": 0.9,
+  "adam_beta2": 0.95,
+  "adam_eps": 1e-08,
+  "wandb_project": "steganography_benchmark",
+  "wandb_name": "train_sft_steg_messaging_nemotron35_lightning_2026-08-13_22-20-31",
+  "enable_trace": false,
+  "span_chart_every": 0,
+  "max_steps": null,
+  "submit_ahead": 1
+}

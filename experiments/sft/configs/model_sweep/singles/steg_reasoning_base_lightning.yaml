@@ -1,0 +1,23 @@
+# Base-SFT steg reasoning, Lightning on mod-3: max_steps = 2x its base messaging cap
+# (2500; capped ~0.88 = 1.2x the truncated 2100). min_prefix twin chance-flat at 10x.
+# Launched 2026-08-16, user-authorized.
+common_root:
+  - configs/base.yaml
+  - configs/model_sweep/condition_steg_reasoning.yaml
+
+experiments:
+  - config:
+      name: steg_reasoning_base_nemotron35_lightning
+      log_file_path: results/model_sweep/steg_reasoning_base/RUN_NAME/logs.txt
+      save_config_path: results/model_sweep/steg_reasoning_base/RUN_NAME/config.yaml
+      function_kwargs:
+        log_path: results/model_sweep/steg_reasoning_base/RUN_NAME
+        model_name: "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
+        renderer_name: nemotron3_ultra_disable_thinking
+        min_prefix: false
+        sft:
+          learning_rate: 1.219e-4
+          max_steps: 5000   # 2x base messaging cap (2500)
+
+common_patch:
+  - wandb_group: model_sweep/steg_reasoning_base

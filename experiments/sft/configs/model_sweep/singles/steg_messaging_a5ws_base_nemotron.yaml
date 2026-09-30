@@ -1,0 +1,22 @@
+# Relaunch of the a5ws base messaging nemotron_super run: the original crashed at its
+# first eval on a RendererError (unparseable completion, deterministic at temp 0);
+# GenerationEvaluator now scores unparseable completions as empty instead of raising.
+common_root:
+  - configs/base.yaml
+  - configs/model_sweep/condition_steg_messaging_a5ws.yaml
+
+experiments:
+  - config:
+      name: steg_messaging_a5ws_base_nemotron3_super
+      log_file_path: results/model_sweep/steg_messaging_a5ws_base/RUN_NAME/logs.txt
+      save_config_path: results/model_sweep/steg_messaging_a5ws_base/RUN_NAME/config.yaml
+      function_kwargs:
+        log_path: results/model_sweep/steg_messaging_a5ws_base/RUN_NAME
+        model_name: "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16"
+        renderer_name: nemotron3_disable_thinking
+        min_prefix: false
+        sft:
+          learning_rate: 8.0e-5
+
+common_patch:
+  - wandb_group: model_sweep/steg_messaging_a5ws_base

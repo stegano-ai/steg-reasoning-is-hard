@@ -1,0 +1,52 @@
+# Binary state-tracking steg reasoning over STRUCTURED covers whose native encoding
+# gives one clean slot per value: knapsack (column_a — A:yes/no per candidate line)
+# and dialogue (speaker — who speaks each line). All frontier models. Length 10.
+common_root: configs/best_steg_reasoning/base.yaml
+common_patch:
+  wandb_project: null
+  wandb_group: knapsack_dialogue_sweep
+  time_stamp_group: true
+  time_stamp_name: false
+  function_kwargs:
+    n_eval: 15
+    n_shot: 5
+
+parallel: true
+
+experiments:
+  - config_axes:
+      - - name: knapsack
+          function_kwargs:
+            main_task:
+              type: knapsack
+              scheme: column_a
+              n_train: 800
+              n_test: 200
+              n_items: 5
+              capacity: 15
+              max_value: 100
+              max_weight: 10
+              n_candidates: 10
+              seed: 42
+        - name: dialogue
+          function_kwargs:
+            main_task:
+              type: dialogue
+              scheme: speaker
+              n_train: 400
+              n_test: 200
+              n_lines: 11
+              corpora: [eng, shake]
+              seed: 42
+      - - name: gpt_5_5
+          function_kwargs: {sampler: {kind: openrouter, model: openai/gpt-5.5}}
+        - name: gpt_5_2
+          function_kwargs: {sampler: {kind: openrouter, model: openai/gpt-5.2}}
+        - name: opus_4_8
+          function_kwargs: {sampler: {kind: openrouter, model: anthropic/claude-opus-4.8}}
+        - name: kimi_k2_6
+          function_kwargs: {sampler: {kind: openrouter, model: moonshotai/kimi-k2.6}}
+        - name: deepseek_v3_2
+          function_kwargs: {sampler: {kind: openrouter, model: deepseek/deepseek-v3.2}}
+        - name: grok_4_3
+          function_kwargs: {sampler: {kind: openrouter, model: x-ai/grok-4.3}}

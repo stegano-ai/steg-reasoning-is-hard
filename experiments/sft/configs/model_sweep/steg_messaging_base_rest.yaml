@@ -1,0 +1,35 @@
+# Base-SFT (no min_prefix) messaging, remaining cheap models, mod-3 variant.
+# Launched 2026-08-16 after gptoss base reasoning crossed (0.983@1000), user-authorized.
+common_root:
+  - configs/base.yaml
+  - configs/model_sweep/condition_steg_messaging.yaml
+
+parallel: true
+
+experiments:
+  - config:
+      name: steg_messaging_base_nemotron3_super
+      log_file_path: results/model_sweep/steg_messaging_base/RUN_NAME/logs.txt
+      save_config_path: results/model_sweep/steg_messaging_base/RUN_NAME/config.yaml
+      function_kwargs:
+        log_path: results/model_sweep/steg_messaging_base/RUN_NAME
+        model_name: "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16"
+        renderer_name: nemotron3_disable_thinking
+        min_prefix: false
+        sft:
+          learning_rate: 8.0e-5
+
+  - config:
+      name: steg_messaging_base_nemotron35_lightning
+      log_file_path: results/model_sweep/steg_messaging_base/RUN_NAME/logs.txt
+      save_config_path: results/model_sweep/steg_messaging_base/RUN_NAME/config.yaml
+      function_kwargs:
+        log_path: results/model_sweep/steg_messaging_base/RUN_NAME
+        model_name: "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
+        renderer_name: nemotron3_ultra_disable_thinking
+        min_prefix: false
+        sft:
+          learning_rate: 1.219e-4
+
+common_patch:
+  - wandb_group: model_sweep/steg_messaging_base

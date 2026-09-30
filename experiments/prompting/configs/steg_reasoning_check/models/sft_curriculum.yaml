@@ -1,0 +1,7 @@
+# Claim 5: SFT curriculum — Qwen3.6-35B-A3B, stage-2 batch-400 checkpoint
+# (curriculum_2026-07-06_17-34-58, 012 branch). Compose fragment, not runnable alone.
+name: sft_curriculum
+function_kwargs:
+  sampler:
+    base_model: Qwen/Qwen3.6-35B-A3B
+    model_path: tinker://87d2076c-d020-53bb-961c-662362258c73:train:0/sampler_weights/000400

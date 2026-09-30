@@ -1,0 +1,5099 @@
+{
+ "seq_length": 9,
+ "models": {
+  "process_35b": {
+   "task": "mod2",
+   "n_errinj_rows": 180,
+   "normal": [
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 19,
+     "n_other": 1,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 19,
+     "n_other": 1,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    }
+   ],
+   "errinj": [
+    [
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 19,
+      "n_corr": 1,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 18,
+      "n_corr": 2,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 19,
+      "n_corr": 1,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 19,
+      "n_corr": 1,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 18,
+      "n_corr": 2,
+      "n_other": 0,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 19,
+      "n_corr": 1,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 16,
+      "n_corr": 4,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 12,
+      "n_corr": 8,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 13,
+      "n_corr": 7,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 13,
+      "n_corr": 7,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 15,
+      "n_corr": 5,
+      "n_other": 0,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 18,
+      "n_corr": 2,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 18,
+      "n_corr": 2,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 16,
+      "n_corr": 4,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 13,
+      "n_corr": 7,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 13,
+      "n_corr": 7,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 14,
+      "n_corr": 6,
+      "n_other": 0,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 16,
+      "n_corr": 4,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 16,
+      "n_corr": 4,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 14,
+      "n_corr": 6,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 14,
+      "n_corr": 6,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 17,
+      "n_corr": 3,
+      "n_other": 0,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 18,
+      "n_corr": 2,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 18,
+      "n_corr": 2,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 19,
+      "n_corr": 1,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 18,
+      "n_corr": 2,
+      "n_other": 0,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 16,
+      "n_corr": 4,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 15,
+      "n_corr": 5,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 16,
+      "n_corr": 4,
+      "n_other": 0,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 19,
+      "n_corr": 1,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 19,
+      "n_corr": 1,
+      "n_other": 0,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     }
+    ]
+   ]
+  },
+  "onlyoutput_397b": {
+   "task": "mod2",
+   "n_errinj_rows": 180,
+   "normal": [
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    }
+   ],
+   "errinj": [
+    [
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 15,
+      "n_corr": 5,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 14,
+      "n_corr": 6,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 13,
+      "n_corr": 7,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 13,
+      "n_corr": 7,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 12,
+      "n_corr": 8,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 14,
+      "n_corr": 6,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 12,
+      "n_corr": 8,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 13,
+      "n_corr": 6,
+      "n_other": 0,
+      "n_missing": 1
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 15,
+      "n_corr": 5,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 18,
+      "n_corr": 2,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 16,
+      "n_corr": 4,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 16,
+      "n_corr": 4,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 16,
+      "n_corr": 4,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 15,
+      "n_corr": 5,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 16,
+      "n_corr": 4,
+      "n_other": 0,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 18,
+      "n_corr": 2,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 15,
+      "n_corr": 5,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 16,
+      "n_corr": 4,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 14,
+      "n_corr": 6,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 16,
+      "n_corr": 4,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 14,
+      "n_corr": 6,
+      "n_other": 0,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 14,
+      "n_corr": 5,
+      "n_other": 0,
+      "n_missing": 1
+     },
+     {
+      "n_err": 14,
+      "n_corr": 5,
+      "n_other": 0,
+      "n_missing": 1
+     },
+     {
+      "n_err": 11,
+      "n_corr": 8,
+      "n_other": 0,
+      "n_missing": 1
+     },
+     {
+      "n_err": 11,
+      "n_corr": 8,
+      "n_other": 0,
+      "n_missing": 1
+     },
+     {
+      "n_err": 9,
+      "n_corr": 10,
+      "n_other": 0,
+      "n_missing": 1
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 17,
+      "n_corr": 3,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 16,
+      "n_corr": 4,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 16,
+      "n_corr": 4,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 11,
+      "n_corr": 9,
+      "n_other": 0,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 15,
+      "n_corr": 5,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 15,
+      "n_corr": 5,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 12,
+      "n_corr": 8,
+      "n_other": 0,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 10,
+      "n_corr": 10,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 13,
+      "n_corr": 7,
+      "n_other": 0,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 14,
+      "n_corr": 6,
+      "n_other": 0,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     }
+    ]
+   ]
+  },
+  "sft_summod3": {
+   "task": "mod3",
+   "n_errinj_rows": 180,
+   "normal": [
+    {
+     "n_err": 0,
+     "n_corr": 19,
+     "n_other": 1,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 19,
+     "n_other": 1,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 18,
+     "n_other": 2,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 17,
+     "n_other": 3,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 17,
+     "n_other": 3,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 15,
+     "n_other": 5,
+     "n_missing": 0
+    }
+   ],
+   "errinj": [
+    [
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 1,
+      "n_corr": 18,
+      "n_other": 1,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 19,
+      "n_other": 1,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 19,
+      "n_other": 1,
+      "n_missing": 0
+     },
+     {
+      "n_err": 1,
+      "n_corr": 18,
+      "n_other": 1,
+      "n_missing": 0
+     },
+     {
+      "n_err": 1,
+      "n_corr": 18,
+      "n_other": 1,
+      "n_missing": 0
+     },
+     {
+      "n_err": 1,
+      "n_corr": 17,
+      "n_other": 1,
+      "n_missing": 1
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 2,
+      "n_corr": 17,
+      "n_other": 1,
+      "n_missing": 0
+     },
+     {
+      "n_err": 1,
+      "n_corr": 17,
+      "n_other": 2,
+      "n_missing": 0
+     },
+     {
+      "n_err": 1,
+      "n_corr": 18,
+      "n_other": 1,
+      "n_missing": 0
+     },
+     {
+      "n_err": 1,
+      "n_corr": 18,
+      "n_other": 1,
+      "n_missing": 0
+     },
+     {
+      "n_err": 2,
+      "n_corr": 17,
+      "n_other": 1,
+      "n_missing": 0
+     },
+     {
+      "n_err": 2,
+      "n_corr": 17,
+      "n_other": 1,
+      "n_missing": 0
+     },
+     {
+      "n_err": 2,
+      "n_corr": 17,
+      "n_other": 1,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 6,
+      "n_corr": 9,
+      "n_other": 5,
+      "n_missing": 0
+     },
+     {
+      "n_err": 3,
+      "n_corr": 14,
+      "n_other": 3,
+      "n_missing": 0
+     },
+     {
+      "n_err": 2,
+      "n_corr": 14,
+      "n_other": 4,
+      "n_missing": 0
+     },
+     {
+      "n_err": 3,
+      "n_corr": 13,
+      "n_other": 4,
+      "n_missing": 0
+     },
+     {
+      "n_err": 5,
+      "n_corr": 11,
+      "n_other": 4,
+      "n_missing": 0
+     },
+     {
+      "n_err": 4,
+      "n_corr": 11,
+      "n_other": 4,
+      "n_missing": 1
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 9,
+      "n_corr": 4,
+      "n_other": 7,
+      "n_missing": 0
+     },
+     {
+      "n_err": 9,
+      "n_corr": 3,
+      "n_other": 8,
+      "n_missing": 0
+     },
+     {
+      "n_err": 9,
+      "n_corr": 6,
+      "n_other": 5,
+      "n_missing": 0
+     },
+     {
+      "n_err": 9,
+      "n_corr": 7,
+      "n_other": 4,
+      "n_missing": 0
+     },
+     {
+      "n_err": 9,
+      "n_corr": 6,
+      "n_other": 5,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 18,
+      "n_corr": 0,
+      "n_other": 2,
+      "n_missing": 0
+     },
+     {
+      "n_err": 18,
+      "n_corr": 0,
+      "n_other": 2,
+      "n_missing": 0
+     },
+     {
+      "n_err": 17,
+      "n_corr": 0,
+      "n_other": 3,
+      "n_missing": 0
+     },
+     {
+      "n_err": 17,
+      "n_corr": 0,
+      "n_other": 3,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 18,
+      "n_corr": 0,
+      "n_other": 2,
+      "n_missing": 0
+     },
+     {
+      "n_err": 17,
+      "n_corr": 1,
+      "n_other": 2,
+      "n_missing": 0
+     },
+     {
+      "n_err": 16,
+      "n_corr": 2,
+      "n_other": 2,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 18,
+      "n_corr": 2,
+      "n_other": 0,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 16,
+      "n_corr": 2,
+      "n_other": 0,
+      "n_missing": 2
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     }
+    ]
+   ]
+  },
+  "sft_curriculum": {
+   "task": "mod3",
+   "n_errinj_rows": 180,
+   "normal": [
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 19,
+     "n_other": 1,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 19,
+     "n_other": 1,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 19,
+     "n_other": 1,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 19,
+     "n_other": 1,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 19,
+     "n_other": 1,
+     "n_missing": 0
+    }
+   ],
+   "errinj": [
+    [
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 18,
+      "n_corr": 2,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 18,
+      "n_corr": 2,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 18,
+      "n_corr": 2,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 18,
+      "n_corr": 2,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 17,
+      "n_corr": 2,
+      "n_other": 1,
+      "n_missing": 0
+     },
+     {
+      "n_err": 18,
+      "n_corr": 2,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 18,
+      "n_corr": 2,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 17,
+      "n_corr": 3,
+      "n_other": 0,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 18,
+      "n_corr": 2,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 19,
+      "n_corr": 1,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 18,
+      "n_corr": 1,
+      "n_other": 1,
+      "n_missing": 0
+     },
+     {
+      "n_err": 17,
+      "n_corr": 2,
+      "n_other": 1,
+      "n_missing": 0
+     },
+     {
+      "n_err": 17,
+      "n_corr": 2,
+      "n_other": 1,
+      "n_missing": 0
+     },
+     {
+      "n_err": 16,
+      "n_corr": 2,
+      "n_other": 2,
+      "n_missing": 0
+     },
+     {
+      "n_err": 16,
+      "n_corr": 2,
+      "n_other": 2,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 15,
+      "n_corr": 4,
+      "n_other": 1,
+      "n_missing": 0
+     },
+     {
+      "n_err": 15,
+      "n_corr": 3,
+      "n_other": 2,
+      "n_missing": 0
+     },
+     {
+      "n_err": 15,
+      "n_corr": 4,
+      "n_other": 1,
+      "n_missing": 0
+     },
+     {
+      "n_err": 16,
+      "n_corr": 3,
+      "n_other": 1,
+      "n_missing": 0
+     },
+     {
+      "n_err": 15,
+      "n_corr": 3,
+      "n_other": 2,
+      "n_missing": 0
+     },
+     {
+      "n_err": 16,
+      "n_corr": 3,
+      "n_other": 1,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 19,
+      "n_corr": 1,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 18,
+      "n_corr": 2,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 17,
+      "n_corr": 3,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 16,
+      "n_corr": 4,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 17,
+      "n_corr": 3,
+      "n_other": 0,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 15,
+      "n_corr": 5,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 12,
+      "n_corr": 8,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 13,
+      "n_corr": 7,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 12,
+      "n_corr": 7,
+      "n_other": 1,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 15,
+      "n_corr": 4,
+      "n_other": 1,
+      "n_missing": 0
+     },
+     {
+      "n_err": 13,
+      "n_corr": 4,
+      "n_other": 3,
+      "n_missing": 0
+     },
+     {
+      "n_err": 12,
+      "n_corr": 7,
+      "n_other": 1,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 15,
+      "n_corr": 3,
+      "n_other": 2,
+      "n_missing": 0
+     },
+     {
+      "n_err": 15,
+      "n_corr": 2,
+      "n_other": 2,
+      "n_missing": 1
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 14,
+      "n_corr": 6,
+      "n_other": 0,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     }
+    ]
+   ]
+  },
+  "sft_nemotron_super": {
+   "task": "mod3",
+   "n_errinj_rows": 180,
+   "normal": [
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 18,
+     "n_other": 2,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 17,
+     "n_other": 3,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 17,
+     "n_other": 3,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 18,
+     "n_other": 2,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 16,
+     "n_other": 4,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 17,
+     "n_other": 3,
+     "n_missing": 0
+    }
+   ],
+   "errinj": [
+    [
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 4,
+      "n_corr": 12,
+      "n_other": 4,
+      "n_missing": 0
+     },
+     {
+      "n_err": 5,
+      "n_corr": 11,
+      "n_other": 4,
+      "n_missing": 0
+     },
+     {
+      "n_err": 6,
+      "n_corr": 11,
+      "n_other": 3,
+      "n_missing": 0
+     },
+     {
+      "n_err": 2,
+      "n_corr": 9,
+      "n_other": 9,
+      "n_missing": 0
+     },
+     {
+      "n_err": 2,
+      "n_corr": 14,
+      "n_other": 4,
+      "n_missing": 0
+     },
+     {
+      "n_err": 2,
+      "n_corr": 15,
+      "n_other": 3,
+      "n_missing": 0
+     },
+     {
+      "n_err": 6,
+      "n_corr": 10,
+      "n_other": 4,
+      "n_missing": 0
+     },
+     {
+      "n_err": 3,
+      "n_corr": 10,
+      "n_other": 7,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 4,
+      "n_corr": 11,
+      "n_other": 5,
+      "n_missing": 0
+     },
+     {
+      "n_err": 7,
+      "n_corr": 7,
+      "n_other": 6,
+      "n_missing": 0
+     },
+     {
+      "n_err": 4,
+      "n_corr": 10,
+      "n_other": 6,
+      "n_missing": 0
+     },
+     {
+      "n_err": 3,
+      "n_corr": 10,
+      "n_other": 7,
+      "n_missing": 0
+     },
+     {
+      "n_err": 6,
+      "n_corr": 10,
+      "n_other": 4,
+      "n_missing": 0
+     },
+     {
+      "n_err": 6,
+      "n_corr": 9,
+      "n_other": 5,
+      "n_missing": 0
+     },
+     {
+      "n_err": 2,
+      "n_corr": 12,
+      "n_other": 6,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 7,
+      "n_corr": 7,
+      "n_other": 6,
+      "n_missing": 0
+     },
+     {
+      "n_err": 7,
+      "n_corr": 9,
+      "n_other": 4,
+      "n_missing": 0
+     },
+     {
+      "n_err": 3,
+      "n_corr": 14,
+      "n_other": 3,
+      "n_missing": 0
+     },
+     {
+      "n_err": 6,
+      "n_corr": 6,
+      "n_other": 8,
+      "n_missing": 0
+     },
+     {
+      "n_err": 6,
+      "n_corr": 7,
+      "n_other": 7,
+      "n_missing": 0
+     },
+     {
+      "n_err": 7,
+      "n_corr": 7,
+      "n_other": 6,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 7,
+      "n_corr": 5,
+      "n_other": 8,
+      "n_missing": 0
+     },
+     {
+      "n_err": 7,
+      "n_corr": 7,
+      "n_other": 6,
+      "n_missing": 0
+     },
+     {
+      "n_err": 9,
+      "n_corr": 4,
+      "n_other": 7,
+      "n_missing": 0
+     },
+     {
+      "n_err": 4,
+      "n_corr": 5,
+      "n_other": 11,
+      "n_missing": 0
+     },
+     {
+      "n_err": 7,
+      "n_corr": 7,
+      "n_other": 6,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 8,
+      "n_corr": 8,
+      "n_other": 4,
+      "n_missing": 0
+     },
+     {
+      "n_err": 6,
+      "n_corr": 9,
+      "n_other": 5,
+      "n_missing": 0
+     },
+     {
+      "n_err": 9,
+      "n_corr": 1,
+      "n_other": 10,
+      "n_missing": 0
+     },
+     {
+      "n_err": 6,
+      "n_corr": 8,
+      "n_other": 6,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 9,
+      "n_corr": 7,
+      "n_other": 4,
+      "n_missing": 0
+     },
+     {
+      "n_err": 7,
+      "n_corr": 7,
+      "n_other": 6,
+      "n_missing": 0
+     },
+     {
+      "n_err": 4,
+      "n_corr": 12,
+      "n_other": 4,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 6,
+      "n_corr": 5,
+      "n_other": 9,
+      "n_missing": 0
+     },
+     {
+      "n_err": 6,
+      "n_corr": 7,
+      "n_other": 7,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 10,
+      "n_corr": 5,
+      "n_other": 5,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     }
+    ]
+   ]
+  },
+  "sft_inkling_small": {
+   "task": "mod3",
+   "n_errinj_rows": 180,
+   "normal": [
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 18,
+     "n_other": 2,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 17,
+     "n_other": 3,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 18,
+     "n_other": 2,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 16,
+     "n_other": 3,
+     "n_missing": 1
+    }
+   ],
+   "errinj": [
+    [
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 8,
+      "n_corr": 6,
+      "n_other": 6,
+      "n_missing": 0
+     },
+     {
+      "n_err": 7,
+      "n_corr": 6,
+      "n_other": 7,
+      "n_missing": 0
+     },
+     {
+      "n_err": 9,
+      "n_corr": 4,
+      "n_other": 7,
+      "n_missing": 0
+     },
+     {
+      "n_err": 6,
+      "n_corr": 4,
+      "n_other": 10,
+      "n_missing": 0
+     },
+     {
+      "n_err": 6,
+      "n_corr": 7,
+      "n_other": 7,
+      "n_missing": 0
+     },
+     {
+      "n_err": 7,
+      "n_corr": 7,
+      "n_other": 6,
+      "n_missing": 0
+     },
+     {
+      "n_err": 10,
+      "n_corr": 3,
+      "n_other": 7,
+      "n_missing": 0
+     },
+     {
+      "n_err": 5,
+      "n_corr": 5,
+      "n_other": 10,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 12,
+      "n_corr": 6,
+      "n_other": 2,
+      "n_missing": 0
+     },
+     {
+      "n_err": 15,
+      "n_corr": 3,
+      "n_other": 2,
+      "n_missing": 0
+     },
+     {
+      "n_err": 12,
+      "n_corr": 4,
+      "n_other": 4,
+      "n_missing": 0
+     },
+     {
+      "n_err": 13,
+      "n_corr": 5,
+      "n_other": 2,
+      "n_missing": 0
+     },
+     {
+      "n_err": 12,
+      "n_corr": 7,
+      "n_other": 1,
+      "n_missing": 0
+     },
+     {
+      "n_err": 12,
+      "n_corr": 6,
+      "n_other": 2,
+      "n_missing": 0
+     },
+     {
+      "n_err": 12,
+      "n_corr": 7,
+      "n_other": 1,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 11,
+      "n_corr": 4,
+      "n_other": 5,
+      "n_missing": 0
+     },
+     {
+      "n_err": 12,
+      "n_corr": 4,
+      "n_other": 4,
+      "n_missing": 0
+     },
+     {
+      "n_err": 9,
+      "n_corr": 5,
+      "n_other": 6,
+      "n_missing": 0
+     },
+     {
+      "n_err": 12,
+      "n_corr": 4,
+      "n_other": 4,
+      "n_missing": 0
+     },
+     {
+      "n_err": 10,
+      "n_corr": 4,
+      "n_other": 6,
+      "n_missing": 0
+     },
+     {
+      "n_err": 10,
+      "n_corr": 5,
+      "n_other": 5,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 14,
+      "n_corr": 2,
+      "n_other": 4,
+      "n_missing": 0
+     },
+     {
+      "n_err": 15,
+      "n_corr": 2,
+      "n_other": 3,
+      "n_missing": 0
+     },
+     {
+      "n_err": 14,
+      "n_corr": 3,
+      "n_other": 3,
+      "n_missing": 0
+     },
+     {
+      "n_err": 13,
+      "n_corr": 3,
+      "n_other": 4,
+      "n_missing": 0
+     },
+     {
+      "n_err": 14,
+      "n_corr": 4,
+      "n_other": 2,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 11,
+      "n_corr": 4,
+      "n_other": 5,
+      "n_missing": 0
+     },
+     {
+      "n_err": 7,
+      "n_corr": 8,
+      "n_other": 5,
+      "n_missing": 0
+     },
+     {
+      "n_err": 8,
+      "n_corr": 3,
+      "n_other": 9,
+      "n_missing": 0
+     },
+     {
+      "n_err": 8,
+      "n_corr": 6,
+      "n_other": 6,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 13,
+      "n_corr": 3,
+      "n_other": 4,
+      "n_missing": 0
+     },
+     {
+      "n_err": 12,
+      "n_corr": 4,
+      "n_other": 4,
+      "n_missing": 0
+     },
+     {
+      "n_err": 10,
+      "n_corr": 6,
+      "n_other": 4,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 8,
+      "n_corr": 8,
+      "n_other": 4,
+      "n_missing": 0
+     },
+     {
+      "n_err": 7,
+      "n_corr": 7,
+      "n_other": 6,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 14,
+      "n_corr": 3,
+      "n_other": 3,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 20,
+      "n_corr": 0,
+      "n_other": 0,
+      "n_missing": 0
+     }
+    ]
+   ]
+  },
+  "sft_a5ws_nemotron_super": {
+   "task": "a5",
+   "n_errinj_rows": 180,
+   "normal": [
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 19,
+     "n_other": 1,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 17,
+     "n_other": 3,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 17,
+     "n_other": 3,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 17,
+     "n_other": 3,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 15,
+     "n_other": 5,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 11,
+     "n_other": 9,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 10,
+     "n_other": 10,
+     "n_missing": 0
+    }
+   ],
+   "errinj": [
+    [
+     {
+      "n_err": 19,
+      "n_corr": 0,
+      "n_other": 1,
+      "n_missing": 0
+     },
+     {
+      "n_err": 6,
+      "n_corr": 12,
+      "n_other": 2,
+      "n_missing": 0
+     },
+     {
+      "n_err": 5,
+      "n_corr": 9,
+      "n_other": 6,
+      "n_missing": 0
+     },
+     {
+      "n_err": 2,
+      "n_corr": 8,
+      "n_other": 10,
+      "n_missing": 0
+     },
+     {
+      "n_err": 2,
+      "n_corr": 9,
+      "n_other": 9,
+      "n_missing": 0
+     },
+     {
+      "n_err": 3,
+      "n_corr": 10,
+      "n_other": 7,
+      "n_missing": 0
+     },
+     {
+      "n_err": 3,
+      "n_corr": 8,
+      "n_other": 9,
+      "n_missing": 0
+     },
+     {
+      "n_err": 3,
+      "n_corr": 7,
+      "n_other": 10,
+      "n_missing": 0
+     },
+     {
+      "n_err": 4,
+      "n_corr": 7,
+      "n_other": 9,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 17,
+      "n_corr": 0,
+      "n_other": 3,
+      "n_missing": 0
+     },
+     {
+      "n_err": 9,
+      "n_corr": 5,
+      "n_other": 6,
+      "n_missing": 0
+     },
+     {
+      "n_err": 6,
+      "n_corr": 7,
+      "n_other": 7,
+      "n_missing": 0
+     },
+     {
+      "n_err": 6,
+      "n_corr": 9,
+      "n_other": 5,
+      "n_missing": 0
+     },
+     {
+      "n_err": 5,
+      "n_corr": 9,
+      "n_other": 6,
+      "n_missing": 0
+     },
+     {
+      "n_err": 6,
+      "n_corr": 6,
+      "n_other": 8,
+      "n_missing": 0
+     },
+     {
+      "n_err": 6,
+      "n_corr": 6,
+      "n_other": 8,
+      "n_missing": 0
+     },
+     {
+      "n_err": 5,
+      "n_corr": 7,
+      "n_other": 8,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 18,
+      "n_corr": 0,
+      "n_other": 2,
+      "n_missing": 0
+     },
+     {
+      "n_err": 9,
+      "n_corr": 5,
+      "n_other": 6,
+      "n_missing": 0
+     },
+     {
+      "n_err": 3,
+      "n_corr": 9,
+      "n_other": 8,
+      "n_missing": 0
+     },
+     {
+      "n_err": 3,
+      "n_corr": 8,
+      "n_other": 9,
+      "n_missing": 0
+     },
+     {
+      "n_err": 3,
+      "n_corr": 8,
+      "n_other": 9,
+      "n_missing": 0
+     },
+     {
+      "n_err": 2,
+      "n_corr": 10,
+      "n_other": 8,
+      "n_missing": 0
+     },
+     {
+      "n_err": 4,
+      "n_corr": 8,
+      "n_other": 8,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 19,
+      "n_corr": 0,
+      "n_other": 1,
+      "n_missing": 0
+     },
+     {
+      "n_err": 14,
+      "n_corr": 3,
+      "n_other": 3,
+      "n_missing": 0
+     },
+     {
+      "n_err": 8,
+      "n_corr": 4,
+      "n_other": 8,
+      "n_missing": 0
+     },
+     {
+      "n_err": 8,
+      "n_corr": 4,
+      "n_other": 8,
+      "n_missing": 0
+     },
+     {
+      "n_err": 8,
+      "n_corr": 4,
+      "n_other": 8,
+      "n_missing": 0
+     },
+     {
+      "n_err": 6,
+      "n_corr": 2,
+      "n_other": 12,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 19,
+      "n_corr": 0,
+      "n_other": 1,
+      "n_missing": 0
+     },
+     {
+      "n_err": 14,
+      "n_corr": 1,
+      "n_other": 5,
+      "n_missing": 0
+     },
+     {
+      "n_err": 10,
+      "n_corr": 4,
+      "n_other": 6,
+      "n_missing": 0
+     },
+     {
+      "n_err": 8,
+      "n_corr": 4,
+      "n_other": 8,
+      "n_missing": 0
+     },
+     {
+      "n_err": 8,
+      "n_corr": 7,
+      "n_other": 5,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 18,
+      "n_corr": 0,
+      "n_other": 2,
+      "n_missing": 0
+     },
+     {
+      "n_err": 9,
+      "n_corr": 2,
+      "n_other": 9,
+      "n_missing": 0
+     },
+     {
+      "n_err": 4,
+      "n_corr": 2,
+      "n_other": 14,
+      "n_missing": 0
+     },
+     {
+      "n_err": 5,
+      "n_corr": 4,
+      "n_other": 11,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 16,
+      "n_corr": 0,
+      "n_other": 4,
+      "n_missing": 0
+     },
+     {
+      "n_err": 11,
+      "n_corr": 5,
+      "n_other": 4,
+      "n_missing": 0
+     },
+     {
+      "n_err": 10,
+      "n_corr": 6,
+      "n_other": 4,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 19,
+      "n_corr": 0,
+      "n_other": 1,
+      "n_missing": 0
+     },
+     {
+      "n_err": 15,
+      "n_corr": 1,
+      "n_other": 4,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 19,
+      "n_corr": 0,
+      "n_other": 1,
+      "n_missing": 0
+     }
+    ]
+   ]
+  },
+  "sft_a5ws_gptoss": {
+   "task": "a5",
+   "n_errinj_rows": 180,
+   "normal": [
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 19,
+     "n_other": 1,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 19,
+     "n_other": 1,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 19,
+     "n_other": 1,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 17,
+     "n_other": 3,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 17,
+     "n_other": 3,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 19,
+     "n_other": 1,
+     "n_missing": 0
+    }
+   ],
+   "errinj": [
+    [
+     {
+      "n_err": 19,
+      "n_corr": 0,
+      "n_other": 1,
+      "n_missing": 0
+     },
+     {
+      "n_err": 8,
+      "n_corr": 6,
+      "n_other": 6,
+      "n_missing": 0
+     },
+     {
+      "n_err": 6,
+      "n_corr": 3,
+      "n_other": 11,
+      "n_missing": 0
+     },
+     {
+      "n_err": 4,
+      "n_corr": 3,
+      "n_other": 13,
+      "n_missing": 0
+     },
+     {
+      "n_err": 3,
+      "n_corr": 4,
+      "n_other": 13,
+      "n_missing": 0
+     },
+     {
+      "n_err": 2,
+      "n_corr": 4,
+      "n_other": 14,
+      "n_missing": 0
+     },
+     {
+      "n_err": 3,
+      "n_corr": 4,
+      "n_other": 13,
+      "n_missing": 0
+     },
+     {
+      "n_err": 2,
+      "n_corr": 3,
+      "n_other": 15,
+      "n_missing": 0
+     },
+     {
+      "n_err": 3,
+      "n_corr": 3,
+      "n_other": 14,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 17,
+      "n_corr": 0,
+      "n_other": 3,
+      "n_missing": 0
+     },
+     {
+      "n_err": 11,
+      "n_corr": 3,
+      "n_other": 6,
+      "n_missing": 0
+     },
+     {
+      "n_err": 7,
+      "n_corr": 7,
+      "n_other": 6,
+      "n_missing": 0
+     },
+     {
+      "n_err": 6,
+      "n_corr": 10,
+      "n_other": 4,
+      "n_missing": 0
+     },
+     {
+      "n_err": 5,
+      "n_corr": 10,
+      "n_other": 5,
+      "n_missing": 0
+     },
+     {
+      "n_err": 6,
+      "n_corr": 10,
+      "n_other": 4,
+      "n_missing": 0
+     },
+     {
+      "n_err": 5,
+      "n_corr": 9,
+      "n_other": 6,
+      "n_missing": 0
+     },
+     {
+      "n_err": 4,
+      "n_corr": 8,
+      "n_other": 8,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 18,
+      "n_corr": 0,
+      "n_other": 2,
+      "n_missing": 0
+     },
+     {
+      "n_err": 9,
+      "n_corr": 3,
+      "n_other": 8,
+      "n_missing": 0
+     },
+     {
+      "n_err": 9,
+      "n_corr": 3,
+      "n_other": 8,
+      "n_missing": 0
+     },
+     {
+      "n_err": 9,
+      "n_corr": 2,
+      "n_other": 9,
+      "n_missing": 0
+     },
+     {
+      "n_err": 7,
+      "n_corr": 2,
+      "n_other": 11,
+      "n_missing": 0
+     },
+     {
+      "n_err": 6,
+      "n_corr": 3,
+      "n_other": 11,
+      "n_missing": 0
+     },
+     {
+      "n_err": 5,
+      "n_corr": 4,
+      "n_other": 11,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 19,
+      "n_corr": 0,
+      "n_other": 1,
+      "n_missing": 0
+     },
+     {
+      "n_err": 16,
+      "n_corr": 1,
+      "n_other": 3,
+      "n_missing": 0
+     },
+     {
+      "n_err": 11,
+      "n_corr": 2,
+      "n_other": 7,
+      "n_missing": 0
+     },
+     {
+      "n_err": 9,
+      "n_corr": 3,
+      "n_other": 8,
+      "n_missing": 0
+     },
+     {
+      "n_err": 7,
+      "n_corr": 3,
+      "n_other": 10,
+      "n_missing": 0
+     },
+     {
+      "n_err": 5,
+      "n_corr": 2,
+      "n_other": 13,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 19,
+      "n_corr": 0,
+      "n_other": 1,
+      "n_missing": 0
+     },
+     {
+      "n_err": 13,
+      "n_corr": 0,
+      "n_other": 7,
+      "n_missing": 0
+     },
+     {
+      "n_err": 12,
+      "n_corr": 0,
+      "n_other": 8,
+      "n_missing": 0
+     },
+     {
+      "n_err": 11,
+      "n_corr": 0,
+      "n_other": 9,
+      "n_missing": 0
+     },
+     {
+      "n_err": 7,
+      "n_corr": 0,
+      "n_other": 13,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 18,
+      "n_corr": 0,
+      "n_other": 2,
+      "n_missing": 0
+     },
+     {
+      "n_err": 14,
+      "n_corr": 1,
+      "n_other": 5,
+      "n_missing": 0
+     },
+     {
+      "n_err": 11,
+      "n_corr": 2,
+      "n_other": 7,
+      "n_missing": 0
+     },
+     {
+      "n_err": 8,
+      "n_corr": 4,
+      "n_other": 8,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 16,
+      "n_corr": 0,
+      "n_other": 4,
+      "n_missing": 0
+     },
+     {
+      "n_err": 11,
+      "n_corr": 2,
+      "n_other": 7,
+      "n_missing": 0
+     },
+     {
+      "n_err": 11,
+      "n_corr": 3,
+      "n_other": 6,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 19,
+      "n_corr": 0,
+      "n_other": 1,
+      "n_missing": 0
+     },
+     {
+      "n_err": 13,
+      "n_corr": 3,
+      "n_other": 4,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 19,
+      "n_corr": 0,
+      "n_other": 1,
+      "n_missing": 0
+     }
+    ]
+   ]
+  },
+  "sft_a5ws_inkling_small": {
+   "task": "a5",
+   "n_errinj_rows": 180,
+   "normal": [
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 20,
+     "n_other": 0,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 19,
+     "n_other": 1,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 19,
+     "n_other": 1,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 19,
+     "n_other": 1,
+     "n_missing": 0
+    },
+    {
+     "n_err": 0,
+     "n_corr": 19,
+     "n_other": 1,
+     "n_missing": 0
+    }
+   ],
+   "errinj": [
+    [
+     {
+      "n_err": 19,
+      "n_corr": 0,
+      "n_other": 1,
+      "n_missing": 0
+     },
+     {
+      "n_err": 9,
+      "n_corr": 8,
+      "n_other": 3,
+      "n_missing": 0
+     },
+     {
+      "n_err": 6,
+      "n_corr": 7,
+      "n_other": 7,
+      "n_missing": 0
+     },
+     {
+      "n_err": 4,
+      "n_corr": 8,
+      "n_other": 8,
+      "n_missing": 0
+     },
+     {
+      "n_err": 4,
+      "n_corr": 8,
+      "n_other": 8,
+      "n_missing": 0
+     },
+     {
+      "n_err": 2,
+      "n_corr": 6,
+      "n_other": 12,
+      "n_missing": 0
+     },
+     {
+      "n_err": 2,
+      "n_corr": 6,
+      "n_other": 12,
+      "n_missing": 0
+     },
+     {
+      "n_err": 2,
+      "n_corr": 7,
+      "n_other": 11,
+      "n_missing": 0
+     },
+     {
+      "n_err": 3,
+      "n_corr": 7,
+      "n_other": 10,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 17,
+      "n_corr": 0,
+      "n_other": 3,
+      "n_missing": 0
+     },
+     {
+      "n_err": 12,
+      "n_corr": 4,
+      "n_other": 4,
+      "n_missing": 0
+     },
+     {
+      "n_err": 8,
+      "n_corr": 7,
+      "n_other": 5,
+      "n_missing": 0
+     },
+     {
+      "n_err": 7,
+      "n_corr": 7,
+      "n_other": 6,
+      "n_missing": 0
+     },
+     {
+      "n_err": 8,
+      "n_corr": 7,
+      "n_other": 4,
+      "n_missing": 1
+     },
+     {
+      "n_err": 9,
+      "n_corr": 7,
+      "n_other": 3,
+      "n_missing": 1
+     },
+     {
+      "n_err": 8,
+      "n_corr": 6,
+      "n_other": 5,
+      "n_missing": 1
+     },
+     {
+      "n_err": 7,
+      "n_corr": 6,
+      "n_other": 6,
+      "n_missing": 1
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 18,
+      "n_corr": 0,
+      "n_other": 2,
+      "n_missing": 0
+     },
+     {
+      "n_err": 14,
+      "n_corr": 3,
+      "n_other": 3,
+      "n_missing": 0
+     },
+     {
+      "n_err": 13,
+      "n_corr": 3,
+      "n_other": 4,
+      "n_missing": 0
+     },
+     {
+      "n_err": 11,
+      "n_corr": 3,
+      "n_other": 6,
+      "n_missing": 0
+     },
+     {
+      "n_err": 10,
+      "n_corr": 3,
+      "n_other": 7,
+      "n_missing": 0
+     },
+     {
+      "n_err": 10,
+      "n_corr": 3,
+      "n_other": 7,
+      "n_missing": 0
+     },
+     {
+      "n_err": 9,
+      "n_corr": 3,
+      "n_other": 7,
+      "n_missing": 1
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 19,
+      "n_corr": 0,
+      "n_other": 1,
+      "n_missing": 0
+     },
+     {
+      "n_err": 17,
+      "n_corr": 1,
+      "n_other": 2,
+      "n_missing": 0
+     },
+     {
+      "n_err": 14,
+      "n_corr": 2,
+      "n_other": 4,
+      "n_missing": 0
+     },
+     {
+      "n_err": 14,
+      "n_corr": 2,
+      "n_other": 4,
+      "n_missing": 0
+     },
+     {
+      "n_err": 12,
+      "n_corr": 3,
+      "n_other": 5,
+      "n_missing": 0
+     },
+     {
+      "n_err": 9,
+      "n_corr": 3,
+      "n_other": 6,
+      "n_missing": 2
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 19,
+      "n_corr": 0,
+      "n_other": 1,
+      "n_missing": 0
+     },
+     {
+      "n_err": 18,
+      "n_corr": 0,
+      "n_other": 2,
+      "n_missing": 0
+     },
+     {
+      "n_err": 17,
+      "n_corr": 0,
+      "n_other": 3,
+      "n_missing": 0
+     },
+     {
+      "n_err": 17,
+      "n_corr": 0,
+      "n_other": 3,
+      "n_missing": 0
+     },
+     {
+      "n_err": 14,
+      "n_corr": 1,
+      "n_other": 4,
+      "n_missing": 1
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 19,
+      "n_corr": 0,
+      "n_other": 1,
+      "n_missing": 0
+     },
+     {
+      "n_err": 14,
+      "n_corr": 2,
+      "n_other": 4,
+      "n_missing": 0
+     },
+     {
+      "n_err": 14,
+      "n_corr": 2,
+      "n_other": 4,
+      "n_missing": 0
+     },
+     {
+      "n_err": 14,
+      "n_corr": 2,
+      "n_other": 4,
+      "n_missing": 0
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 16,
+      "n_corr": 0,
+      "n_other": 4,
+      "n_missing": 0
+     },
+     {
+      "n_err": 17,
+      "n_corr": 0,
+      "n_other": 3,
+      "n_missing": 0
+     },
+     {
+      "n_err": 15,
+      "n_corr": 1,
+      "n_other": 3,
+      "n_missing": 1
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 19,
+      "n_corr": 0,
+      "n_other": 1,
+      "n_missing": 0
+     },
+     {
+      "n_err": 13,
+      "n_corr": 3,
+      "n_other": 3,
+      "n_missing": 1
+     }
+    ],
+    [
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 0,
+      "n_corr": 20,
+      "n_other": 0,
+      "n_missing": 0
+     },
+     {
+      "n_err": 19,
+      "n_corr": 0,
+      "n_other": 1,
+      "n_missing": 0
+     }
+    ]
+   ]
+  }
+ }
+}

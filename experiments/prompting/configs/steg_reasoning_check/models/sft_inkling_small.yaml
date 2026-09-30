@@ -1,0 +1,9 @@
+# Model-sweep SFT crosser: Inkling-Small, mod-3 markdown steg reasoning crossed at
+# cumulative step 3000 = 2.7x messaging (0.961/exact 0.90). Sampler weights converted
+# from the early_stop_8 state checkpoint. Compose fragment, not runnable alone.
+name: sft_inkling_small
+function_kwargs:
+  sampler:
+    base_model: thinkingmachines/Inkling-Small
+    renderer_name: tml_v0_no_thinking
+    model_path: tinker://6e554c9b-b963-5706-9182-8a68329ea080:train:1/sampler_weights/errinj_inkling_small_cross

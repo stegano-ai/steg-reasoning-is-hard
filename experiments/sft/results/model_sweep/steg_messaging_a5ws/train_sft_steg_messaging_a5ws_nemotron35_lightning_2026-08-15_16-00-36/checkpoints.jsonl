@@ -1,0 +1,1 @@
+{"name": "000500", "batch": 500, "epoch": 0, "state_path": "tinker://00da7ada-ed15-5c6b-96cc-ae87047c4658:train:0/weights/000500", "sampler_path": "tinker://00da7ada-ed15-5c6b-96cc-ae87047c4658:train:0/sampler_weights/000500", "elapsed_tokens": 2021283}

@@ -1,0 +1,16 @@
+# a5ws row for the paper-baseline model (Qwen3.6-35B) — was missing from the variant
+# sweep, which only covered the six new models. Launched 2026-08-17, user-authorized.
+common_root:
+  - configs/base.yaml
+  - configs/model_sweep/condition_steg_messaging_a5ws.yaml
+
+experiments:
+  - config:
+      name: steg_messaging_a5ws_qwen36
+      function_kwargs:
+        model_name: "Qwen/Qwen3.6-35B-A3B"
+        renderer_name: qwen3_5_disable_thinking
+        sft:
+          learning_rate: 1.6e-4
+common_patch:
+  - wandb_group: model_sweep/steg_messaging_a5ws

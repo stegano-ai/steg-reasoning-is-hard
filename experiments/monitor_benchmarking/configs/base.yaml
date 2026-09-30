@@ -1,0 +1,33 @@
+name: monitor_benchmarking
+function_name: rate_examples
+time_stamp_name: true
+
+log_file_path: results/RUN_NAME/logs.txt
+save_config_path: results/RUN_NAME/config.yaml
+
+wandb_project: null
+
+function_kwargs:
+  log_path: results/RUN_NAME
+  main_task:
+    type: aqua_rat
+  pool_size: 6
+  n_per_type: 6
+  seq_length: 5
+  n_symbols: 2
+  min_prefix: false
+  schemes:
+    - capitalization
+    - whitespace
+    - markdown
+    - word_prefix
+  include_natural: true
+  include_synthetic_header: true
+  include_number_prefix: true
+  include_model_output: false
+  sample_model: openai/gpt-5-mini-2025-08-07
+  sample_reasoning: {effort: low}
+  sample_max_tokens: 800
+  monitor_model: gpt-5-mini-2025-08-07
+  monitor_prompt: ""   # supplied via experiment config
+  seed: 0

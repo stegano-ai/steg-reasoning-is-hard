@@ -1,0 +1,21 @@
+# a5ws steg reasoning continuation to 10x messaging steps for gptoss_120b: resumes the 2x
+# run's final checkpoint (messaging S=800, 2x done, +6400 to cumulative 10x).
+# Launched 2026-08-21, user-authorized ($250 envelope).
+common_root:
+  - configs/base.yaml
+  - configs/model_sweep/condition_steg_reasoning_a5ws.yaml
+
+experiments:
+  - config:
+      name: steg_reasoning_a5ws_gptoss_120b_cont10x
+      function_kwargs:
+        model_name: "openai/gpt-oss-120b"
+        renderer_name: gpt_oss_no_sysprompt
+        sft:
+          learning_rate: 1.138e-4
+          num_epochs: 10
+          max_steps: 6400
+          load_checkpoint_path: tinker://ce2f15c7-705a-5da9-adcb-a4f467f83f59:train:0/weights/final
+
+common_patch:
+  - wandb_group: model_sweep/steg_reasoning_a5ws

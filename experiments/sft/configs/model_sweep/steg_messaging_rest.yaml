@@ -1,0 +1,35 @@
+# The three cheap-tier messaging runs queued behind nemotron3_super in the original
+# sequential launch, run in parallel instead (2026-08-13 overnight, user-authorized).
+common_root:
+  - configs/base.yaml
+  - configs/model_sweep/condition_steg_messaging.yaml
+
+parallel: true
+
+experiments:
+  - config:
+      name: steg_messaging_gptoss_120b
+      function_kwargs:
+        model_name: "openai/gpt-oss-120b"
+        renderer_name: gpt_oss_no_sysprompt
+        sft:
+          learning_rate: 1.138e-4   # hidden 2880
+
+  - config:
+      name: steg_messaging_inkling_small
+      function_kwargs:
+        model_name: "thinkingmachines/Inkling-Small"
+        renderer_name: tml_v0_no_thinking
+        sft:
+          learning_rate: 8.0e-5   # hidden 4096
+
+  - config:
+      name: steg_messaging_nemotron35_lightning
+      function_kwargs:
+        model_name: "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
+        renderer_name: nemotron3_ultra_disable_thinking
+        sft:
+          learning_rate: 1.219e-4   # hidden 2688
+
+common_patch:
+  - wandb_group: model_sweep/steg_messaging

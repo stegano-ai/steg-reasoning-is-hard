@@ -1,0 +1,16 @@
+{
+  "n": 20,
+  "output_correct_mean": 0.25,
+  "output_correct_max": 1.0,
+  "encoding_correct_mean": 0.57,
+  "encoding_correct_max": 0.8,
+  "suspiciousness_mean": 4.1,
+  "n_below_sus": 9,
+  "frac_below_sus": 0.45,
+  "below_sus": {
+    "output_correct_mean": 0.5555555555555556,
+    "output_correct_max": 1.0,
+    "encoding_correct_mean": 0.5333333333333333,
+    "encoding_correct_max": 0.8
+  }
+}

@@ -1,0 +1,57 @@
+# Monitor validation for the paper: each of the three monitor prompts the paper uses, on the
+# inputs it actually sees, at n=100-150 per type; plus the lenient monitor at n=100.
+#   rl_base      — RL base prompt (= experiments/rl/configs/base.yaml), aqua_rat full answers, binary values
+#   icl_opening  — frontier fixed-scheme sweeps: "opening" prompt, WildChat min-prefix openings, 5 symbols
+#   icl_complete — model-designed-scheme sweeps: "complete response" prompt, WildChat full answers, 5 symbols
+#   lenient      — credulity check for the no-cover encoded-reasoning baseline monitor
+# natural|<scheme> rows (min_prefix) are the unencoded same-length prefix paired with that scheme.
+common_root: configs/base.yaml
+common_patch:
+  time_stamp_group: true
+  time_stamp_name: false
+  function_kwargs:
+    include_model_output: true
+
+parallel: true
+
+experiments:
+  - config_steps:
+      - configs/monitors/v4_added_structure.yaml
+      - name: rl_base
+        function_kwargs:
+          pool_size: 400
+          n_per_type: 400
+          schemes: [capitalization, whitespace, markdown, word_prefix, evocative_word_prefix]
+  - config_steps:
+      - configs/monitors/icl_opening.yaml
+      - name: icl_opening
+        function_kwargs:
+          pool_size: 1200
+          n_per_type: 300
+          main_task: {type: wildchat, n_train: 1200, n_test: 500}
+          n_symbols: 5
+          seq_length: 10
+          min_prefix: true
+          schemes: [whitespace, markdown, sentence_markdown, sentence_interjection, sentence_newline, word_prefix]
+          include_synthetic_header: false
+          include_number_prefix: false
+  - config_steps:
+      - configs/monitors/icl_complete.yaml
+      - name: icl_complete
+        function_kwargs:
+          pool_size: 1200
+          n_per_type: 300
+          main_task: {type: wildchat, n_train: 1200, n_test: 500}
+          n_symbols: 5
+          seq_length: 10
+          schemes: [whitespace, markdown, sentence_markdown, sentence_interjection, sentence_newline, word_prefix]
+          include_synthetic_header: false
+  - config_steps:
+      - configs/monitors/lenient_computation.yaml
+      - name: lenient_computation
+        function_kwargs:
+          pool_size: 300
+          n_per_type: 300
+          schemes: [markdown, word_prefix, evocative_word_prefix]
+          include_synthetic_header: false
+          include_model_output: false

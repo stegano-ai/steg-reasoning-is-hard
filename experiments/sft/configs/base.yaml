@@ -1,0 +1,40 @@
+name: train_sft
+function_name: train_sft
+time_stamp_name: true
+
+log_file_path: results/RUN_NAME/logs.txt
+save_config_path: results/RUN_NAME/config.yaml
+
+wandb_project: steganography_benchmark
+
+function_kwargs:
+  model_name: Qwen/Qwen3.6-35B-A3B   # Tinker-supported (Qwen3-4B-Instruct is not)
+  renderer_name: qwen3_5_disable_thinking
+  log_path: results/RUN_NAME
+  sft:
+    learning_rate: 1.6e-4
+    lr_schedule: constant
+    lora_rank: 32
+    num_epochs: 1
+    eval_every: 250   # NLL evals bill 3 * n_test datums at the training rate — dominant cost term if frequent
+    save_every: -1
+    load_checkpoint_path: null
+  n_train: 6400
+  n_test: 200
+  n_eval: 40
+  batch_size: 16
+  max_tokens: 768   # the length filter now counts the full task-prompt message, not just the question
+  min_prefix: false
+  closed_prefix_targets: false   # train min_prefix covers as closed messages (needed for TML models)
+  wandb_project: steganography_benchmark
+  wandb_name: RUN_NAME
+  seed: 0
+  infrequent_eval_every: 100
+  eval_max_tokens: 260
+  early_stop_metric: null   # e.g. eval/reasoning_correct; stops once >= early_stop_threshold
+  early_stop_threshold: null
+  early_stop_min_steps: 0
+
+  main_task:
+    type: aqua_rat
+    scheme: capitalization

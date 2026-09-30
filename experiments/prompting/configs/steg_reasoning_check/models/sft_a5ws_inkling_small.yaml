@@ -1,0 +1,7 @@
+# a5ws steg-reasoning checkpoint for the errinj harness. 10x-continuation CROSSING checkpoint (cum 900 = 3.0x), converted from its early-stop state. Compose fragment, not runnable alone.
+name: sft_a5ws_inkling_small
+function_kwargs:
+  sampler:
+    base_model: thinkingmachines/Inkling-Small
+    renderer_name: tml_v0_no_thinking
+    model_path: tinker://c7a08b8d-4a98-5587-ae56-3811b0c5fd02:train:2/sampler_weights/errinj_a5ws_inkling_small_cross

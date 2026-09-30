@@ -1,0 +1,2 @@
+# The full steg-reasoning check sweep — 12 content-addressed cells, all defined in base.yaml.
+base: configs/steg_reasoning_check/base.yaml

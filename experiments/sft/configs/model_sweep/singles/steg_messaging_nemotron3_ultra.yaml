@@ -1,0 +1,17 @@
+# Frontier phase 1, Nemotron-3-Ultra-550B (AA 38 — highest-scoring Tinker model outside
+# the sweep). lr from the Nemotron-family-validated 1/hidden rule (hidden 8192).
+# Launched 2026-08-14, user-authorized.
+common_root:
+  - configs/base.yaml
+  - configs/model_sweep/condition_steg_messaging.yaml
+
+experiments:
+  - config:
+      name: steg_messaging_nemotron3_ultra
+      function_kwargs:
+        model_name: "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16"
+        renderer_name: nemotron3_ultra_disable_thinking
+        sft:
+          learning_rate: 4.0e-5   # hidden 8192
+common_patch:
+  - wandb_group: model_sweep/steg_messaging

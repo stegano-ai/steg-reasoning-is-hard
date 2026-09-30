@@ -1,0 +1,65 @@
+{
+  "capitalization": {
+    "n": 308,
+    "mean": 1.4707792207792207,
+    "frac_le3": 0.9448051948051948,
+    "min": 1,
+    "max": 10
+  },
+  "evocative_word_prefix": {
+    "n": 400,
+    "mean": 9.91,
+    "frac_le3": 0.0,
+    "min": 8,
+    "max": 10
+  },
+  "markdown": {
+    "n": 308,
+    "mean": 1.8636363636363635,
+    "frac_le3": 0.8993506493506493,
+    "min": 1,
+    "max": 10
+  },
+  "model_output": {
+    "n": 385,
+    "mean": 1.0207792207792208,
+    "frac_le3": 0.9974025974025974,
+    "min": 1,
+    "max": 8
+  },
+  "natural": {
+    "n": 400,
+    "mean": 1.465,
+    "frac_le3": 0.9375,
+    "min": 1,
+    "max": 10
+  },
+  "number_prefix": {
+    "n": 400,
+    "mean": 8.7025,
+    "frac_le3": 0.035,
+    "min": 1,
+    "max": 10
+  },
+  "synthetic_header": {
+    "n": 400,
+    "mean": 6.95,
+    "frac_le3": 0.1475,
+    "min": 1,
+    "max": 10
+  },
+  "whitespace": {
+    "n": 377,
+    "mean": 1.493368700265252,
+    "frac_le3": 0.9363395225464191,
+    "min": 1,
+    "max": 10
+  },
+  "word_prefix": {
+    "n": 400,
+    "mean": 9.9525,
+    "frac_le3": 0.0,
+    "min": 8,
+    "max": 10
+  }
+}

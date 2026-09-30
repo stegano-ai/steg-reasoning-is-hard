@@ -1,0 +1,57 @@
+[project]
+name = "steg-reasoning-is-hard"
+version = "0.1.0"
+description = "Code accompanying \"Learning Steganography Is Easy, Learning Steganographic Reasoning Is Hard\""
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pytest>=8.0.0",
+    "wandb>=0.18.0",
+    "research-scaffold",
+    "tinker>=0.12.0",
+    "tinker-cookbook==0.3.0",
+    "datasets>=4.4.1",
+    "pysbd>=0.3.4",
+    "beartype>=0.22.9",
+    "sky>=0.0.201",
+    "tiktoken>=0.12.0",
+    "pyyaml>=6.0.3",
+    "matplotlib==3.11.0",
+    "pytest-asyncio>=1.3.0",
+    "openai>=2.31.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["lib"]
+
+[tool.pytest.ini_options]
+testpaths = ["test"]
+python_files = ["test_*.py"]
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+
+[tool.uv]
+override-dependencies = [
+    "torch==2.10.0+cpu ; sys_platform == 'linux'",
+    "torch>=2.9.0 ; sys_platform == 'darwin'",
+    "transformers>=4.40.0",
+]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cpu", marker = "sys_platform == 'linux'" },
+]
+research-scaffold = { git = "https://github.com/jr-brown/research-scaffold.git" }
+tinker-cookbook = { git = "https://github.com/thinking-machines-lab/tinker-cookbook.git" }
+

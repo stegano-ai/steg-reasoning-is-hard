@@ -1,0 +1,23 @@
+# Best case for steg-reasoning via prompting: binary flip task (0=keep, 1=change),
+# gpt-5.5, sentence_markdown scheme, wildchat cover, length 10. How good can it get?
+common_root: configs/best_steg_reasoning/base.yaml
+common_patch:
+  wandb_project: null
+  wandb_group: wildchat_gpt55
+  time_stamp_group: true
+  time_stamp_name: false
+  function_kwargs:
+    n_eval: 50
+    n_shot: 8
+    sampler: {kind: openrouter, model: openai/gpt-5.5}
+    side_task: {type: rolling_mod_sum, n_samples: 10000, seq_length: 5, min_operand: 0, operand_range: 1, modulus: 2, reasoning_in_output: false}
+    main_task:
+      type: wildchat
+      scheme: sentence_markdown
+      n_train: 700
+      n_test: 400
+      n_symbols: 2
+
+experiments:
+  - config:
+      name: gpt_5_5

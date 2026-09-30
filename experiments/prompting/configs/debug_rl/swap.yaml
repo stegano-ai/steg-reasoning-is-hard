@@ -1,0 +1,44 @@
+common_root: configs/base.yaml
+common_patch:
+  wandb_project: null
+  wandb_group: debug_rl
+  time_stamp_group: false
+  time_stamp_name: false
+  function_kwargs:
+    # swap turn prefills the cover + "#### " -> needs a prefill-capable sampler (Tinker)
+    sampler:
+      kind: tinker
+      base_model: Qwen/Qwen3.6-35B-A3B
+      renderer_name: qwen3_5_disable_thinking
+    n_eval: 3
+    n_shot: 0
+    eval_max_tokens: 1500
+    temperature: 1.0
+    swap_eval: true
+    main_task:
+      type: knapsack
+      scheme: column_a
+      n_train: 50
+      n_test: 50
+      n_items: 5
+      capacity: 15
+      max_value: 100
+      max_weight: 10
+      n_candidates: 5
+      seed: 42
+    side_task:
+      type: rolling_mod_sum
+      n_samples: 500
+      seq_length: 5
+      operand_range: 2
+      modulus: 2
+    task_prompt: |
+      {MAIN_TASK}
+
+      Solve the knapsack heuristic, encoding the side values into item A of each candidate line per: {ENCODING_SCHEME}
+      Side input: {SIDE_INPUT}
+      After MAX V, write a line "#### " followed by the {N_VALUES} values.
+
+experiments:
+  - config:
+      name: swap

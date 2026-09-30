@@ -1,0 +1,40 @@
+# a5ws phase 2 (whitespace-5 + ball_and_cups steg reasoning), the 3 models whose
+# messaging has converged. max_steps = 2x messaging early-stop step. Launched
+# 2026-08-15, user-authorized. Lightning follows when its messaging resolves.
+common_root:
+  - configs/base.yaml
+  - configs/model_sweep/condition_steg_reasoning_a5ws.yaml
+
+parallel: true
+
+experiments:
+  - config:
+      name: steg_reasoning_a5ws_inkling_small
+      function_kwargs:
+        model_name: "thinkingmachines/Inkling-Small"
+        renderer_name: tml_v0_no_thinking
+        closed_prefix_targets: true
+        sft:
+          learning_rate: 1.6e-4
+          max_steps: 600   # 2x messaging (300)
+
+  - config:
+      name: steg_reasoning_a5ws_nemotron3_super
+      function_kwargs:
+        model_name: "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16"
+        renderer_name: nemotron3_disable_thinking
+        sft:
+          learning_rate: 8.0e-5
+          max_steps: 1000   # 2x messaging (500)
+
+  - config:
+      name: steg_reasoning_a5ws_gptoss_120b
+      function_kwargs:
+        model_name: "openai/gpt-oss-120b"
+        renderer_name: gpt_oss_no_sysprompt
+        sft:
+          learning_rate: 1.138e-4
+          max_steps: 1600   # 2x messaging (800)
+
+common_patch:
+  - wandb_group: model_sweep/steg_reasoning_a5ws

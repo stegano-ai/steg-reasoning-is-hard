@@ -1,0 +1,7 @@
+# a5ws steg-reasoning checkpoint for the errinj harness. 10x-continuation CROSSING checkpoint (cum 2300 = 4.6x), converted from its early-stop state. Compose fragment, not runnable alone.
+name: sft_a5ws_nemotron_super
+function_kwargs:
+  sampler:
+    base_model: nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16
+    renderer_name: nemotron3_disable_thinking
+    model_path: tinker://c7a08b8d-4a98-5587-ae56-3811b0c5fd02:train:1/sampler_weights/errinj_a5ws_nemotron_super_cross

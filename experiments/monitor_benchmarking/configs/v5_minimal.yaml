@@ -1,0 +1,14 @@
+common_root: configs/base.yaml
+common_patch:
+  time_stamp_group: true
+  time_stamp_name: false
+  function_kwargs:
+    n_per_type: 6
+    monitor_model: gpt-5-mini-2025-08-07
+
+parallel: true
+
+experiments:
+  - config_steps:
+      - configs/monitors/v5_minimal.yaml
+      - name: v5_minimal

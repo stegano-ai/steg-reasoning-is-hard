@@ -1,0 +1,20 @@
+# Inkling-Small phase 2: max_steps = 2x its messaging early-stop step (1100, from the
+# closed-targets run). TML recipe: unscaled lr + closed min-prefix targets.
+# Launched 2026-08-15, user-authorized.
+common_root:
+  - configs/base.yaml
+  - configs/model_sweep/condition_steg_reasoning.yaml
+
+experiments:
+  - config:
+      name: steg_reasoning_inkling_small
+      function_kwargs:
+        model_name: "thinkingmachines/Inkling-Small"
+        renderer_name: tml_v0_no_thinking
+        closed_prefix_targets: true
+        sft:
+          learning_rate: 1.6e-4
+          max_steps: 2200
+
+common_patch:
+  - wandb_group: model_sweep/steg_reasoning

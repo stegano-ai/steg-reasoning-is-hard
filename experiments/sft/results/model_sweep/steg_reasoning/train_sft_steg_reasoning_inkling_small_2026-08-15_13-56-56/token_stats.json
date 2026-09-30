@@ -1,0 +1,1 @@
+{"train_datums": 40000, "train_tokens_total": 16398859, "train_tokens_mean": 409.971475, "nll_test_tokens": 82170, "nll_shuffled_tokens": 82162, "nll_original_tokens": 79724, "eval_prefill_tokens": 14561}

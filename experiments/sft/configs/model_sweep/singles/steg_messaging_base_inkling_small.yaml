@@ -1,0 +1,25 @@
+# "Base SFT" probe (no min_prefix): full-cover messaging targets. Inkling-Small chosen
+# because its mod-3 steg reasoning was fast (2x breakthrough) — if base messaging itself
+# is ~3x slower, slower base reasoning would not count as evidence of harder learning.
+# No closed_prefix_targets needed: without min_prefix, datums are ordinary closed
+# messages, so the TML turn-structure hazard does not apply. Launched 2026-08-16,
+# user-authorized ($450 direction budget).
+common_root:
+  - configs/base.yaml
+  - configs/model_sweep/condition_steg_messaging.yaml
+
+experiments:
+  - config:
+      name: steg_messaging_base_inkling_small
+      log_file_path: results/model_sweep/steg_messaging_base/RUN_NAME/logs.txt
+      save_config_path: results/model_sweep/steg_messaging_base/RUN_NAME/config.yaml
+      function_kwargs:
+        log_path: results/model_sweep/steg_messaging_base/RUN_NAME
+        model_name: "thinkingmachines/Inkling-Small"
+        renderer_name: tml_v0_no_thinking
+        min_prefix: false
+        sft:
+          learning_rate: 1.6e-4
+
+common_patch:
+  - wandb_group: model_sweep/steg_messaging_base

@@ -1,0 +1,21 @@
+# Fourth Inkling-Small messaging attempt: same lr 1.6e-4 as the donor's successful run,
+# but with closed_prefix_targets — the diagnosed root cause was unclosed prefill datums
+# corrupting TML turn structure (leaked <|message_model|> headers, unstoppable '#### D'
+# loops from ~step 1400 at ALL of 4e-5/8e-5/1.6e-4). The donor's successful run trained
+# truncated covers as closed messages. Launched 2026-08-14, user-authorized.
+common_root:
+  - configs/base.yaml
+  - configs/model_sweep/condition_steg_messaging.yaml
+
+experiments:
+  - config:
+      name: steg_messaging_inkling_small_closed
+      function_kwargs:
+        model_name: "thinkingmachines/Inkling-Small"
+        renderer_name: tml_v0_no_thinking
+        closed_prefix_targets: true
+        sft:
+          learning_rate: 1.6e-4
+
+common_patch:
+  - wandb_group: model_sweep/steg_messaging

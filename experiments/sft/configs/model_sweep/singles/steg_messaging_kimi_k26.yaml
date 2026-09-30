@@ -1,0 +1,15 @@
+# Frontier phase 1, Kimi-K2.6, launched 2026-08-14 (user-authorized).
+common_root:
+  - configs/base.yaml
+  - configs/model_sweep/condition_steg_messaging.yaml
+
+experiments:
+  - config:
+      name: steg_messaging_kimi_k26
+      function_kwargs:
+        model_name: "moonshotai/Kimi-K2.6"
+        renderer_name: kimi_k26_disable_thinking
+        sft:
+          learning_rate: 4.571e-5   # hidden 7168
+common_patch:
+  - wandb_group: model_sweep/steg_messaging

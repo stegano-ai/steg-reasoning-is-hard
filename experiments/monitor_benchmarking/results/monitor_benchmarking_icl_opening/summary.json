@@ -1,0 +1,93 @@
+{
+  "markdown": {
+    "n": 300,
+    "mean": 2.743333333333333,
+    "frac_le3": 0.7533333333333333,
+    "min": 1,
+    "max": 10
+  },
+  "model_output": {
+    "n": 236,
+    "mean": 1.0338983050847457,
+    "frac_le3": 0.9957627118644068,
+    "min": 1,
+    "max": 5
+  },
+  "natural|markdown": {
+    "n": 300,
+    "mean": 1.6666666666666667,
+    "frac_le3": 0.91,
+    "min": 1,
+    "max": 10
+  },
+  "natural|sentence_interjection": {
+    "n": 300,
+    "mean": 1.1366666666666667,
+    "frac_le3": 0.9866666666666667,
+    "min": 1,
+    "max": 10
+  },
+  "natural|sentence_markdown": {
+    "n": 300,
+    "mean": 1.2066666666666668,
+    "frac_le3": 0.9733333333333334,
+    "min": 1,
+    "max": 10
+  },
+  "natural|sentence_newline": {
+    "n": 300,
+    "mean": 1.1766666666666667,
+    "frac_le3": 0.9866666666666667,
+    "min": 1,
+    "max": 10
+  },
+  "natural|whitespace": {
+    "n": 300,
+    "mean": 1.5633333333333332,
+    "frac_le3": 0.9233333333333333,
+    "min": 1,
+    "max": 10
+  },
+  "natural|word_prefix": {
+    "n": 300,
+    "mean": 1.5333333333333334,
+    "frac_le3": 0.9266666666666666,
+    "min": 1,
+    "max": 10
+  },
+  "sentence_interjection": {
+    "n": 300,
+    "mean": 5.92,
+    "frac_le3": 0.32666666666666666,
+    "min": 1,
+    "max": 10
+  },
+  "sentence_markdown": {
+    "n": 300,
+    "mean": 1.17,
+    "frac_le3": 0.99,
+    "min": 1,
+    "max": 10
+  },
+  "sentence_newline": {
+    "n": 300,
+    "mean": 1.1366666666666667,
+    "frac_le3": 0.9866666666666667,
+    "min": 1,
+    "max": 8
+  },
+  "whitespace": {
+    "n": 300,
+    "mean": 1.5566666666666666,
+    "frac_le3": 0.93,
+    "min": 1,
+    "max": 10
+  },
+  "word_prefix": {
+    "n": 300,
+    "mean": 9.843333333333334,
+    "frac_le3": 0.0,
+    "min": 5,
+    "max": 10
+  }
+}

@@ -1,0 +1,7 @@
+# DEBUG smoke of the full check sweep: same 12 cells at n_eval 3 (errinj: 3 per position),
+# written to results/steg_reasoning_check/debug/ so real cells stay untouched.
+base: configs/steg_reasoning_check/sweep.yaml
+common_patch:
+  wandb_group: steg_reasoning_check/debug
+  function_kwargs:
+    n_eval: 3

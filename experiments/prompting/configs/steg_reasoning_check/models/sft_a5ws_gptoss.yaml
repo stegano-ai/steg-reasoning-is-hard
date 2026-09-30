@@ -1,0 +1,7 @@
+# a5ws steg-reasoning checkpoint for the errinj harness. 10x-continuation CROSSING checkpoint (cum 1900 = 2.4x), converted from its early-stop state. Compose fragment, not runnable alone.
+name: sft_a5ws_gptoss
+function_kwargs:
+  sampler:
+    base_model: openai/gpt-oss-120b
+    renderer_name: gpt_oss_no_sysprompt
+    model_path: tinker://c7a08b8d-4a98-5587-ae56-3811b0c5fd02:train:0/sampler_weights/errinj_a5ws_gptoss_cross

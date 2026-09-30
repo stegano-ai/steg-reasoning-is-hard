@@ -1,0 +1,18 @@
+# Rerun of the failed Inkling-Small messaging run (capped 2500 @ 0.511 at lr 8.0e-5:
+# climbed to 0.79 by step 1400 then destabilized). Halved LR. Launched 2026-08-14,
+# user-authorized.
+common_root:
+  - configs/base.yaml
+  - configs/model_sweep/condition_steg_messaging.yaml
+
+experiments:
+  - config:
+      name: steg_messaging_inkling_small_lr4
+      function_kwargs:
+        model_name: "thinkingmachines/Inkling-Small"
+        renderer_name: tml_v0_no_thinking
+        sft:
+          learning_rate: 4.0e-5   # hidden 4096; halved from the sweep's 8.0e-5
+
+common_patch:
+  - wandb_group: model_sweep/steg_messaging

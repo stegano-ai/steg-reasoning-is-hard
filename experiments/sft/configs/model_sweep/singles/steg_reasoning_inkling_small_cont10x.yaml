@@ -1,0 +1,23 @@
+# Inkling-Small mod-3 steg reasoning continuation to 10x messaging steps: resumes the 2x
+# run's final checkpoint (0.897/0.75 at 2200, mid phase-transition) and trains up to
+# 8800 more (cumulative 11000 = 10x messaging S of 1100). Early stop will likely fire
+# early. TML recipe. Launched 2026-08-16, user-authorized.
+common_root:
+  - configs/base.yaml
+  - configs/model_sweep/condition_steg_reasoning.yaml
+
+experiments:
+  - config:
+      name: steg_reasoning_inkling_small_cont10x
+      function_kwargs:
+        model_name: "thinkingmachines/Inkling-Small"
+        renderer_name: tml_v0_no_thinking
+        closed_prefix_targets: true
+        sft:
+          learning_rate: 1.6e-4
+          num_epochs: 10
+          max_steps: 8800
+          load_checkpoint_path: tinker://109b6c2b-ed10-554c-9da8-5e8d641cdfda:train:0/weights/final
+
+common_patch:
+  - wandb_group: model_sweep/steg_reasoning

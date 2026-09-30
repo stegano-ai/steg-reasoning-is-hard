@@ -1,0 +1,38 @@
+{
+  "capitalization": {
+    "n": 5,
+    "mean": 4.2,
+    "min": 2,
+    "max": 7
+  },
+  "markdown": {
+    "n": 5,
+    "mean": 6.6,
+    "min": 5,
+    "max": 8
+  },
+  "natural": {
+    "n": 6,
+    "mean": 3.8333333333333335,
+    "min": 1,
+    "max": 8
+  },
+  "synthetic_header": {
+    "n": 6,
+    "mean": 7.5,
+    "min": 6,
+    "max": 8
+  },
+  "whitespace": {
+    "n": 5,
+    "mean": 3.8,
+    "min": 2,
+    "max": 8
+  },
+  "word_prefix": {
+    "n": 6,
+    "mean": 9.0,
+    "min": 9,
+    "max": 9
+  }
+}

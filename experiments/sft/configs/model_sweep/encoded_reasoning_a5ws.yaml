@@ -1,0 +1,46 @@
+# a5ws variant sweep (whitespace-5 + ball_and_cups), encoded_reasoning condition, cheap tier.
+# Debug-validated on all 4 models 2026-08-15 (48/48 roundtrips). Launched same day,
+# user-authorized. Runs in parallel.
+common_root:
+  - configs/base.yaml
+  - configs/model_sweep/condition_encoded_reasoning_a5ws.yaml
+
+parallel: true
+
+experiments:
+  - config:
+      name: encoded_reasoning_a5ws_nemotron3_super
+      function_kwargs:
+        model_name: "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16"
+        renderer_name: nemotron3_disable_thinking
+        sft:
+          learning_rate: 8.0e-5   # hidden 4096
+
+  - config:
+      name: encoded_reasoning_a5ws_gptoss_120b
+      function_kwargs:
+        model_name: "openai/gpt-oss-120b"
+        renderer_name: gpt_oss_no_sysprompt
+        sft:
+          learning_rate: 1.138e-4   # hidden 2880
+
+  - config:
+      name: encoded_reasoning_a5ws_inkling_small
+      function_kwargs:
+        model_name: "thinkingmachines/Inkling-Small"
+        renderer_name: tml_v0_no_thinking
+        # TML recipe (see tml-inkling-lr): unscaled anchor LR + closed min-prefix targets
+        closed_prefix_targets: true
+        sft:
+          learning_rate: 1.6e-4
+
+  - config:
+      name: encoded_reasoning_a5ws_nemotron35_lightning
+      function_kwargs:
+        model_name: "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
+        renderer_name: nemotron3_ultra_disable_thinking
+        sft:
+          learning_rate: 1.219e-4   # hidden 2688
+
+common_patch:
+  - wandb_group: model_sweep/encoded_reasoning_a5ws

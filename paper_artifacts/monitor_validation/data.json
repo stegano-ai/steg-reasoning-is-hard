@@ -1,0 +1,382 @@
+{
+  "monitors": {
+    "rl_base": {
+      "prompt": "base",
+      "main_task": "aqua_rat",
+      "min_prefix": false,
+      "n_symbols": 2,
+      "seq_length": 5,
+      "types": {
+        "capitalization": {
+          "n": 308,
+          "mean": 1.47,
+          "sd": 1.64,
+          "k_le3": 291,
+          "k_ge7": 16,
+          "min": 1,
+          "max": 10
+        },
+        "evocative_word_prefix": {
+          "n": 400,
+          "mean": 9.91,
+          "sd": 0.33,
+          "k_le3": 0,
+          "k_ge7": 400,
+          "min": 8,
+          "max": 10
+        },
+        "markdown": {
+          "n": 306,
+          "mean": 1.84,
+          "sd": 1.93,
+          "k_le3": 277,
+          "k_ge7": 23,
+          "min": 1,
+          "max": 10
+        },
+        "model_output": {
+          "n": 385,
+          "mean": 1.02,
+          "sd": 0.36,
+          "k_le3": 384,
+          "k_ge7": 1,
+          "min": 1,
+          "max": 8
+        },
+        "natural": {
+          "n": 400,
+          "mean": 1.47,
+          "sd": 1.62,
+          "k_le3": 375,
+          "k_ge7": 18,
+          "min": 1,
+          "max": 10
+        },
+        "number_prefix": {
+          "n": 398,
+          "mean": 8.72,
+          "sd": 1.55,
+          "k_le3": 14,
+          "k_ge7": 382,
+          "min": 1,
+          "max": 10
+        },
+        "synthetic_header": {
+          "n": 399,
+          "mean": 6.95,
+          "sd": 1.98,
+          "k_le3": 59,
+          "k_ge7": 305,
+          "min": 1,
+          "max": 10
+        },
+        "whitespace": {
+          "n": 375,
+          "mean": 1.47,
+          "sd": 1.74,
+          "k_le3": 353,
+          "k_ge7": 21,
+          "min": 1,
+          "max": 10
+        },
+        "word_prefix": {
+          "n": 400,
+          "mean": 9.95,
+          "sd": 0.24,
+          "k_le3": 0,
+          "k_ge7": 400,
+          "min": 8,
+          "max": 10
+        }
+      }
+    },
+    "icl_opening": {
+      "prompt": "opening",
+      "main_task": "wildchat",
+      "min_prefix": true,
+      "n_symbols": 5,
+      "seq_length": 10,
+      "types": {
+        "markdown": {
+          "n": 299,
+          "mean": 2.74,
+          "sd": 2.72,
+          "k_le3": 226,
+          "k_ge7": 52,
+          "min": 1,
+          "max": 10
+        },
+        "model_output": {
+          "n": 235,
+          "mean": 1.02,
+          "sd": 0.13,
+          "k_le3": 235,
+          "k_ge7": 0,
+          "min": 1,
+          "max": 2
+        },
+        "natural|markdown": {
+          "n": 297,
+          "mean": 1.63,
+          "sd": 2.07,
+          "k_le3": 273,
+          "k_ge7": 23,
+          "min": 1,
+          "max": 10
+        },
+        "natural|sentence_interjection": {
+          "n": 300,
+          "mean": 1.14,
+          "sd": 0.86,
+          "k_le3": 296,
+          "k_ge7": 3,
+          "min": 1,
+          "max": 10
+        },
+        "natural|sentence_markdown": {
+          "n": 299,
+          "mean": 1.19,
+          "sd": 1.09,
+          "k_le3": 292,
+          "k_ge7": 6,
+          "min": 1,
+          "max": 10
+        },
+        "natural|sentence_newline": {
+          "n": 300,
+          "mean": 1.18,
+          "sd": 0.96,
+          "k_le3": 296,
+          "k_ge7": 4,
+          "min": 1,
+          "max": 10
+        },
+        "natural|whitespace": {
+          "n": 298,
+          "mean": 1.54,
+          "sd": 1.94,
+          "k_le3": 277,
+          "k_ge7": 19,
+          "min": 1,
+          "max": 10
+        },
+        "natural|word_prefix": {
+          "n": 299,
+          "mean": 1.52,
+          "sd": 1.87,
+          "k_le3": 278,
+          "k_ge7": 19,
+          "min": 1,
+          "max": 10
+        },
+        "sentence_interjection": {
+          "n": 298,
+          "mean": 5.93,
+          "sd": 2.84,
+          "k_le3": 98,
+          "k_ge7": 184,
+          "min": 1,
+          "max": 10
+        },
+        "sentence_markdown": {
+          "n": 300,
+          "mean": 1.17,
+          "sd": 0.81,
+          "k_le3": 297,
+          "k_ge7": 3,
+          "min": 1,
+          "max": 10
+        },
+        "sentence_newline": {
+          "n": 300,
+          "mean": 1.14,
+          "sd": 0.73,
+          "k_le3": 296,
+          "k_ge7": 3,
+          "min": 1,
+          "max": 8
+        },
+        "whitespace": {
+          "n": 299,
+          "mean": 1.55,
+          "sd": 1.98,
+          "k_le3": 279,
+          "k_ge7": 20,
+          "min": 1,
+          "max": 10
+        },
+        "word_prefix": {
+          "n": 299,
+          "mean": 9.86,
+          "sd": 0.54,
+          "k_le3": 0,
+          "k_ge7": 297,
+          "min": 5,
+          "max": 10
+        },
+        "natural": {
+          "n": 1793,
+          "mean": 1.3660457334076965,
+          "sd": 1.5581591245063158,
+          "k_le3": 1712,
+          "k_ge7": 74,
+          "min": 1,
+          "max": 10
+        }
+      }
+    },
+    "icl_complete": {
+      "prompt": "complete",
+      "main_task": "wildchat",
+      "min_prefix": false,
+      "n_symbols": 5,
+      "seq_length": 10,
+      "types": {
+        "markdown": {
+          "n": 297,
+          "mean": 3.69,
+          "sd": 2.8,
+          "k_le3": 190,
+          "k_ge7": 79,
+          "min": 1,
+          "max": 10
+        },
+        "model_output": {
+          "n": 293,
+          "mean": 1.01,
+          "sd": 0.18,
+          "k_le3": 292,
+          "k_ge7": 0,
+          "min": 1,
+          "max": 4
+        },
+        "natural": {
+          "n": 300,
+          "mean": 1.08,
+          "sd": 0.51,
+          "k_le3": 297,
+          "k_ge7": 1,
+          "min": 1,
+          "max": 8
+        },
+        "number_prefix": {
+          "n": 299,
+          "mean": 9.0,
+          "sd": 1.26,
+          "k_le3": 6,
+          "k_ge7": 291,
+          "min": 2,
+          "max": 10
+        },
+        "sentence_interjection": {
+          "n": 300,
+          "mean": 6.84,
+          "sd": 2.34,
+          "k_le3": 59,
+          "k_ge7": 224,
+          "min": 1,
+          "max": 10
+        },
+        "sentence_markdown": {
+          "n": 300,
+          "mean": 1.8,
+          "sd": 1.5,
+          "k_le3": 280,
+          "k_ge7": 12,
+          "min": 1,
+          "max": 9
+        },
+        "sentence_newline": {
+          "n": 300,
+          "mean": 1.12,
+          "sd": 0.52,
+          "k_le3": 299,
+          "k_ge7": 1,
+          "min": 1,
+          "max": 8
+        },
+        "whitespace": {
+          "n": 299,
+          "mean": 1.36,
+          "sd": 1.09,
+          "k_le3": 289,
+          "k_ge7": 6,
+          "min": 1,
+          "max": 8
+        },
+        "word_prefix": {
+          "n": 299,
+          "mean": 9.77,
+          "sd": 0.64,
+          "k_le3": 0,
+          "k_ge7": 296,
+          "min": 5,
+          "max": 10
+        }
+      }
+    },
+    "lenient_computation": {
+      "prompt": "lenient",
+      "main_task": "aqua_rat",
+      "min_prefix": false,
+      "n_symbols": 2,
+      "seq_length": 5,
+      "types": {
+        "evocative_word_prefix": {
+          "n": 300,
+          "mean": 1.09,
+          "sd": 0.32,
+          "k_le3": 300,
+          "k_ge7": 0,
+          "min": 1,
+          "max": 3
+        },
+        "markdown": {
+          "n": 237,
+          "mean": 1.02,
+          "sd": 0.13,
+          "k_le3": 237,
+          "k_ge7": 0,
+          "min": 1,
+          "max": 2
+        },
+        "model_output": {
+          "n": 287,
+          "mean": 1.0,
+          "sd": 0.0,
+          "k_le3": 287,
+          "k_ge7": 0,
+          "min": 1,
+          "max": 1
+        },
+        "natural": {
+          "n": 299,
+          "mean": 1.01,
+          "sd": 0.12,
+          "k_le3": 299,
+          "k_ge7": 0,
+          "min": 1,
+          "max": 2
+        },
+        "number_prefix": {
+          "n": 299,
+          "mean": 1.78,
+          "sd": 0.94,
+          "k_le3": 282,
+          "k_ge7": 0,
+          "min": 1,
+          "max": 5
+        },
+        "word_prefix": {
+          "n": 300,
+          "mean": 1.25,
+          "sd": 0.56,
+          "k_le3": 298,
+          "k_ge7": 0,
+          "min": 1,
+          "max": 5
+        }
+      }
+    }
+  }
+}

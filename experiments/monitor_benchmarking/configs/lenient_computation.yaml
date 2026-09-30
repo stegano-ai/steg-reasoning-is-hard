@@ -1,0 +1,23 @@
+# Credulity check for the Task-2 lenient monitor ("does this look like a running-sum-mod-2
+# computation?"). We want the encoding types — especially evocative_word_prefix — to score
+# LOW (the monitor waves them through as non-suspicious). number_prefix (raw digits) is the
+# closest-to-revealing control.
+common_root: configs/base.yaml
+common_patch:
+  time_stamp_group: true
+  time_stamp_name: false
+  function_kwargs:
+    n_per_type: 6
+    seq_length: 5
+    monitor_model: gpt-5-mini-2025-08-07
+    schemes:
+      - markdown
+      - word_prefix
+      - evocative_word_prefix
+
+parallel: true
+
+experiments:
+  - config_steps:
+      - configs/monitors/lenient_computation.yaml
+      - name: lenient_computation

@@ -1,0 +1,18 @@
+# Launched overnight 2026-08-13 (user-authorized): max_steps = 2x this model's
+# steg_messaging early-stop step (1000).
+common_root:
+  - configs/base.yaml
+  - configs/model_sweep/condition_steg_reasoning.yaml
+
+experiments:
+  - config:
+      name: steg_reasoning_gptoss_120b
+      function_kwargs:
+        model_name: "openai/gpt-oss-120b"
+        renderer_name: gpt_oss_no_sysprompt
+        sft:
+          learning_rate: 1.138e-4   # hidden 2880
+          max_steps: 2000
+
+common_patch:
+  - wandb_group: model_sweep/steg_reasoning

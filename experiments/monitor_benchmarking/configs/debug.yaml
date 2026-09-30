@@ -1,0 +1,28 @@
+common_root: configs/base.yaml
+common_patch:
+  time_stamp_group: true
+  time_stamp_name: false
+  function_kwargs:
+    pool_size: 12
+    n_per_type: 3
+    include_model_output: true
+
+parallel: true
+
+experiments:
+  - config_steps:
+      - configs/monitors/v4_added_structure.yaml
+      - name: debug_rl_base
+        function_kwargs:
+          schemes: [capitalization, word_prefix]
+  - config_steps:
+      - configs/monitors/icl_opening.yaml
+      - name: debug_icl_opening
+        function_kwargs:
+          main_task: {type: wildchat, n_train: 500, n_test: 500}
+          n_symbols: 5
+          seq_length: 10
+          min_prefix: true
+          schemes: [whitespace, sentence_markdown, word_prefix]
+          include_synthetic_header: false
+          include_number_prefix: false

@@ -1,0 +1,19 @@
+# Frontier Inkling phase 2: max_steps = 2x its messaging early-stop step (1000). TML
+# recipe validated on Inkling-Small. Launched 2026-08-16, user-authorized.
+common_root:
+  - configs/base.yaml
+  - configs/model_sweep/condition_steg_reasoning.yaml
+
+experiments:
+  - config:
+      name: steg_reasoning_inkling
+      function_kwargs:
+        model_name: "thinkingmachines/Inkling"
+        renderer_name: tml_v0_no_thinking
+        closed_prefix_targets: true
+        sft:
+          learning_rate: 1.6e-4
+          max_steps: 2000   # 2x messaging (1000)
+
+common_patch:
+  - wandb_group: model_sweep/steg_reasoning

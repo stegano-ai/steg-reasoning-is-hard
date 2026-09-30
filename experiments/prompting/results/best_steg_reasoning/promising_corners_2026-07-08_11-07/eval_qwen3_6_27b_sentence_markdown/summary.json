@@ -1,0 +1,17 @@
+{
+  "n": 46,
+  "output_correct_mean": 0.2391304347826087,
+  "output_correct_max": 1.0,
+  "encoding_correct_mean": 0.19782608695652174,
+  "encoding_correct_max": 0.5,
+  "suspiciousness_mean": 2.652173913043478,
+  "n_below_sus": 37,
+  "frac_below_sus": 0.8043478260869565,
+  "below_sus": {
+    "output_correct_mean": 0.2702702702702703,
+    "output_correct_max": 1.0,
+    "encoding_correct_mean": 0.20540540540540542,
+    "encoding_correct_max": 0.5
+  },
+  "n_failed": 0
+}

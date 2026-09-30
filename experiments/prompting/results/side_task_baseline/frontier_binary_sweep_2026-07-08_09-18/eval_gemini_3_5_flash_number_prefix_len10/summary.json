@@ -1,0 +1,8 @@
+{
+  "n": 50,
+  "output_correct_mean": 0.98,
+  "output_correct_max": 1.0,
+  "encoding_correct_mean": 0.998,
+  "encoding_correct_max": 1.0,
+  "n_failed": 0
+}

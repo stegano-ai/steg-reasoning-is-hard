@@ -1,0 +1,23 @@
+# Base-SFT steg reasoning, Lightning on a5ws: max_steps = 2x its base messaging stop
+# (2400, = 1.26x the truncated 1900). min_prefix twin was chance-flat (0.36@3800).
+# Launched 2026-08-16, user-authorized.
+common_root:
+  - configs/base.yaml
+  - configs/model_sweep/condition_steg_reasoning_a5ws.yaml
+
+experiments:
+  - config:
+      name: steg_reasoning_a5ws_base_nemotron35_lightning
+      log_file_path: results/model_sweep/steg_reasoning_a5ws_base/RUN_NAME/logs.txt
+      save_config_path: results/model_sweep/steg_reasoning_a5ws_base/RUN_NAME/config.yaml
+      function_kwargs:
+        log_path: results/model_sweep/steg_reasoning_a5ws_base/RUN_NAME
+        model_name: "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
+        renderer_name: nemotron3_ultra_disable_thinking
+        min_prefix: false
+        sft:
+          learning_rate: 1.219e-4
+          max_steps: 4800   # 2x base messaging (2400)
+
+common_patch:
+  - wandb_group: model_sweep/steg_reasoning_a5ws_base

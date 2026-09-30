@@ -1,0 +1,17 @@
+# Second rerun of Inkling-Small messaging: 8.0e-5 and 4.0e-5 both collapsed; the
+# successful donor run used 1.6e-4 unscaled. Launched 2026-08-14, user-authorized.
+common_root:
+  - configs/base.yaml
+  - configs/model_sweep/condition_steg_messaging.yaml
+
+experiments:
+  - config:
+      name: steg_messaging_inkling_small_lr16
+      function_kwargs:
+        model_name: "thinkingmachines/Inkling-Small"
+        renderer_name: tml_v0_no_thinking
+        sft:
+          learning_rate: 1.6e-4   # UNSCALED Qwen anchor: proven for Inkling-Small in steg-transfer-learning (transfer-learning branch, 2026-08-07 curriculum run); hidden-size downscaling was the failure
+
+common_patch:
+  - wandb_group: model_sweep/steg_messaging

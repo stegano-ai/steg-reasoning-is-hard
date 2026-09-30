@@ -1,0 +1,24 @@
+# Base-SFT (no min_prefix) steg reasoning, Inkling-Small on mod-3: max_steps = 2x its
+# base messaging cap (2500; capped at 0.897/0.80 = 2.3x the truncated S of 1100).
+# min_prefix version broke through at ~2x (0.90/0.75 @ 2200). Launched 2026-08-16,
+# user-authorized ($450 direction).
+common_root:
+  - configs/base.yaml
+  - configs/model_sweep/condition_steg_reasoning.yaml
+
+experiments:
+  - config:
+      name: steg_reasoning_base_inkling_small
+      log_file_path: results/model_sweep/steg_reasoning_base/RUN_NAME/logs.txt
+      save_config_path: results/model_sweep/steg_reasoning_base/RUN_NAME/config.yaml
+      function_kwargs:
+        log_path: results/model_sweep/steg_reasoning_base/RUN_NAME
+        model_name: "thinkingmachines/Inkling-Small"
+        renderer_name: tml_v0_no_thinking
+        min_prefix: false
+        sft:
+          learning_rate: 1.6e-4
+          max_steps: 5000   # 2x base messaging (2500)
+
+common_patch:
+  - wandb_group: model_sweep/steg_reasoning_base

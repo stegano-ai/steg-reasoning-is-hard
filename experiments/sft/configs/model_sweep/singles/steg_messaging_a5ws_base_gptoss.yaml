@@ -1,0 +1,21 @@
+# "Base SFT" probe (no min_prefix) for the a5ws variant. gpt-oss chosen because its a5ws
+# steg reasoning nearly crossed at 2x. Launched 2026-08-16, user-authorized.
+common_root:
+  - configs/base.yaml
+  - configs/model_sweep/condition_steg_messaging_a5ws.yaml
+
+experiments:
+  - config:
+      name: steg_messaging_a5ws_base_gptoss_120b
+      log_file_path: results/model_sweep/steg_messaging_a5ws_base/RUN_NAME/logs.txt
+      save_config_path: results/model_sweep/steg_messaging_a5ws_base/RUN_NAME/config.yaml
+      function_kwargs:
+        log_path: results/model_sweep/steg_messaging_a5ws_base/RUN_NAME
+        model_name: "openai/gpt-oss-120b"
+        renderer_name: gpt_oss_no_sysprompt
+        min_prefix: false
+        sft:
+          learning_rate: 1.138e-4
+
+common_patch:
+  - wandb_group: model_sweep/steg_messaging_a5ws_base

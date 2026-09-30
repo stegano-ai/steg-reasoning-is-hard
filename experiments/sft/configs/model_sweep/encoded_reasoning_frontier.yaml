@@ -1,0 +1,30 @@
+# Frontier tier of the encoded_reasoning model sweep — priced separately from the cheap tier
+# (Inkling + Kimi-K2.6 bill several times the cheap models per token).
+common_root:
+  - configs/base.yaml
+  - configs/model_sweep/condition_encoded_reasoning.yaml
+
+experiments:
+  - config:
+      name: encoded_reasoning_inkling
+      function_kwargs:
+        model_name: "thinkingmachines/Inkling"
+        renderer_name: tml_v0_no_thinking
+        # TML models: unscaled Qwen-anchor LR (hidden-size downscaling collapses; see
+        # Inkling-Small failures at 8e-5/4e-5) and CLOSED min-prefix targets (unclosed
+        # prefill datums corrupt TML turn structure; fix validated 2026-08-14:
+        # Inkling-Small messaging 0.953/exact 0.875 early-stopped at step 1100).
+        closed_prefix_targets: true
+        sft:
+          learning_rate: 1.6e-4
+
+  - config:
+      name: encoded_reasoning_kimi_k26
+      function_kwargs:
+        model_name: "moonshotai/Kimi-K2.6"
+        renderer_name: kimi_k26_disable_thinking
+        sft:
+          learning_rate: 4.571e-5   # hidden 7168
+
+common_patch:
+  - wandb_group: model_sweep/encoded_reasoning

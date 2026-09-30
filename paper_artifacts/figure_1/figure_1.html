@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Figure 1</title>
+  <script src="https://unpkg.com/roughjs@4.5.2/bundled/rough.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: #fffffe;
+      padding: 30px;
+    }
+
+    .figure {
+      display: inline-flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .picto-row, .chart-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 48px;
+    }
+
+    .picto-row .pictogram, .chart-row > div {
+      width: 470px;
+      flex-shrink: 0;
+    }
+
+    .chart-title {
+      font-size: 32px;
+      font-weight: 700;
+      color: #2d3436;
+      text-align: center;
+      margin-bottom: 0;
+    }
+
+    .chart-canvas { display: block; }
+
+    .row-title {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+
+    .divider-canvas {
+      height: 10px;
+      align-self: stretch;
+      flex-shrink: 0;
+    }
+
+    .row-blue .row-title { color: #0984e3; }
+    .row-orange .row-title { color: #e17055; }
+    .row-red .row-title { color: #d63031; }
+
+    .vflow {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0;
+    }
+
+    .chip {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 17px;
+      background: #f5f5f5;
+      border: 1.5px solid #ddd;
+      border-radius: 6px;
+      padding: 6px 14px;
+      color: #2d3436;
+      white-space: nowrap;
+    }
+
+    .avatar-canvas, .arrow-canvas, .down-arrow-canvas { display: block; flex-shrink: 0; }
+
+    .down-arrow-canvas { margin-left: 22px; }
+
+    .robot-row, .result-row {
+      display: flex;
+      align-items: center;
+    }
+
+    .bubble-container {
+      position: relative;
+      margin: 0 14px 0 10px;
+      flex-shrink: 0;
+    }
+
+    .bubble-canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+    }
+
+    .bubble-content {
+      position: relative;
+      z-index: 1;
+      padding: 12px 22px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 17px;
+      color: #2d3436;
+      white-space: nowrap;
+    }
+
+    .answer {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 26px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .row-blue .answer { color: #0984e3; }
+    .row-orange .answer { color: #e17055; }
+    .row-red .answer { color: #d63031; }
+  </style>
+</head>
+<body>
+  <div class="figure">
+
+    <div class="picto-row">
+
+      <div class="pictogram row-blue">
+        <div class="row-title">Steganographic messaging</div>
+        <div class="vflow">
+          <div class="chip">Message: 110010</div>
+          <canvas class="down-arrow-canvas" width="24" height="26"></canvas>
+          <div class="robot-row">
+            <canvas class="avatar-canvas robot" data-color="#74b9ff" width="68" height="80"></canvas>
+            <div class="bubble-container">
+              <canvas class="bubble-canvas"></canvas>
+              <div class="bubble-content" data-fill="#e7f5ff">Sure, Here is a Recipe about...</div>
+            </div>
+          </div>
+          <canvas class="down-arrow-canvas out-arrow" width="24" height="26"></canvas>
+          <div class="result-row">
+            <canvas class="avatar-canvas robot" data-color="#74b9ff" width="68" height="80"></canvas>
+            <canvas class="arrow-canvas" width="46" height="24"></canvas>
+            <div class="answer">110010</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pictogram row-orange">
+        <div class="row-title">Encoded reasoning</div>
+        <div class="vflow">
+          <div class="chip">(1+0+1+0+1+1) mod 2</div>
+          <canvas class="down-arrow-canvas" width="24" height="26"></canvas>
+          <div class="robot-row">
+            <canvas class="avatar-canvas robot" data-color="#ffa45c" width="68" height="80"></canvas>
+            <div class="bubble-container">
+              <canvas class="bubble-canvas"></canvas>
+              <div class="bubble-content" data-fill="#ffeedd">overshadow overshadow disclaim<br>disclaim overshadow disclaim</div>
+            </div>
+          </div>
+          <canvas class="down-arrow-canvas out-arrow" width="24" height="26"></canvas>
+          <div class="result-row">
+            <div class="answer">= 0</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pictogram row-red">
+        <div class="row-title">Steganographic reasoning</div>
+        <div class="vflow">
+          <div class="chip">(1+0+1+0+1+1) mod 2</div>
+          <canvas class="down-arrow-canvas" width="24" height="26"></canvas>
+          <div class="robot-row">
+            <canvas class="avatar-canvas robot" data-color="#ff7675" width="68" height="80"></canvas>
+            <div class="bubble-container">
+              <canvas class="bubble-canvas"></canvas>
+              <div class="bubble-content" data-fill="#fff5f5">Sure, Here is a Recipe about...</div>
+            </div>
+          </div>
+          <canvas class="down-arrow-canvas out-arrow" width="24" height="26"></canvas>
+          <div class="result-row">
+            <div class="answer">= 0</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <canvas class="divider-canvas"></canvas>
+
+    <div class="chart-row">
+      <div>
+        <div class="chart-title">a) In-context learning</div>
+        <canvas id="chart-icl" class="chart-canvas" width="470" height="235"></canvas>
+      </div>
+      <div>
+        <div class="chart-title">b) Reinforcement learning</div>
+        <canvas id="chart-rl" class="chart-canvas" width="470" height="235"></canvas>
+      </div>
+      <div>
+        <div class="chart-title">c) Supervised fine-tuning</div>
+        <canvas id="chart-sft" class="chart-canvas" width="470" height="235"></canvas>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    const dpr = window.devicePixelRatio || 1;
+    const rcFor = canvas => rough.canvas(canvas, { options: { seed: 7 } });
+
+    function scaleCanvas(canvas) {
+      const rect = canvas.getBoundingClientRect();
+      canvas.width = rect.width * dpr;
+      canvas.height = rect.height * dpr;
+      canvas.style.width = rect.width + 'px';
+      canvas.style.height = rect.height + 'px';
+      canvas.getContext('2d').scale(dpr, dpr);
+    }
+
+    function drawRobot(canvas, color) {
+      scaleCanvas(canvas);
+      const s = canvas.getBoundingClientRect().width / 90;
+      canvas.getContext('2d').scale(s, s);
+      const rc = rcFor(canvas);
+      rc.rectangle(15, 22, 60, 52, { fill: color, fillStyle: 'solid', stroke: '#2d3436', strokeWidth: 2.5, roughness: 1 });
+      rc.circle(33, 45, 15, { fill: 'white', fillStyle: 'solid', stroke: '#2d3436', strokeWidth: 2, roughness: 0.5 });
+      rc.circle(57, 45, 15, { fill: 'white', fillStyle: 'solid', stroke: '#2d3436', strokeWidth: 2, roughness: 0.5 });
+      rc.circle(33, 45, 6, { fill: '#2d3436', fillStyle: 'solid', roughness: 0.3 });
+      rc.circle(57, 45, 6, { fill: '#2d3436', fillStyle: 'solid', roughness: 0.3 });
+      rc.line(45, 22, 45, 8, { stroke: '#2d3436', strokeWidth: 2.5, roughness: 0.8 });
+      rc.circle(45, 5, 9, { fill: color, fillStyle: 'solid', stroke: '#2d3436', strokeWidth: 2, roughness: 0.5 });
+      rc.rectangle(22, 78, 45, 22, { fill: color, fillStyle: 'solid', stroke: '#2d3436', strokeWidth: 2.5, roughness: 1 });
+    }
+
+    function drawArrow(canvas) {
+      scaleCanvas(canvas);
+      const rc = rcFor(canvas);
+      rc.line(6, 12, 38, 12, { stroke: '#636e72', strokeWidth: 2.5, roughness: 0.6 });
+      rc.line(30, 5, 40, 12, { stroke: '#636e72', strokeWidth: 2.5, roughness: 0.5 });
+      rc.line(30, 19, 40, 12, { stroke: '#636e72', strokeWidth: 2.5, roughness: 0.5 });
+    }
+
+    function drawDownArrow(canvas) {
+      scaleCanvas(canvas);
+      const rc = rcFor(canvas);
+      rc.line(12, 2, 12, 20, { stroke: '#636e72', strokeWidth: 2.5, roughness: 0.6 });
+      rc.line(5, 14, 12, 22, { stroke: '#636e72', strokeWidth: 2.5, roughness: 0.5 });
+      rc.line(19, 14, 12, 22, { stroke: '#636e72', strokeWidth: 2.5, roughness: 0.5 });
+    }
+
+    function drawBubble(container) {
+      const content = container.querySelector('.bubble-content');
+      const canvas = container.querySelector('.bubble-canvas');
+      const w = content.offsetWidth + 10;
+      const h = content.offsetHeight + 10;
+
+      canvas.width = (w + 20) * dpr;
+      canvas.height = (h + 20) * dpr;
+      canvas.style.width = (w + 20) + 'px';
+      canvas.style.height = (h + 20) + 'px';
+      canvas.style.left = '-10px';
+      canvas.style.top = '-10px';
+      canvas.getContext('2d').scale(dpr, dpr);
+
+      const rc = rcFor(canvas);
+      const fill = content.dataset.fill;
+      rc.rectangle(15, 10, w - 5, h - 5, { fill, fillStyle: 'solid', stroke: '#2d3436', strokeWidth: 2, roughness: 1 });
+      rc.polygon([[5, 35], [15, 30], [15, 45]], { fill, fillStyle: 'solid', stroke: '#2d3436', strokeWidth: 2, roughness: 1 });
+    }
+
+    const COLORS = { messaging: '#0984e3', encoded: '#e17055', steg: '#d63031' };
+
+    // Placeholder data until the real runs are in; fake charts get a watermark.
+    // Each series: { xs, ys (percent), err?: per-point [minus, plus] }
+    const CHARTS = {
+      'chart-icl': {
+        xLabel: 'n-shot examples', xMax: 10, fake: true,
+        series: {
+          messaging: { xs: [0, 1, 2, 4, 6, 8, 10], ys: [10, 35, 60, 80, 90, 93, 95] },
+          encoded: { xs: [0, 1, 2, 4, 6, 8, 10], ys: [8, 20, 35, 55, 65, 70, 72] },
+          steg: { xs: [0, 1, 2, 4, 6, 8, 10], ys: [5, 6, 8, 9, 10, 10, 11] },
+        },
+      },
+      'chart-rl': {
+        xLabel: 'RL steps', xMax: 280, fake: true,
+        series: {
+          messaging: { xs: [0, 40, 80, 120, 160, 200, 240, 280], ys: [12, 30, 55, 75, 88, 93, 95, 96] },
+          encoded: { xs: [0, 40, 80, 120, 160, 200, 240, 280], ys: [10, 22, 38, 52, 62, 68, 71, 73] },
+          steg: { xs: [0, 40, 80, 120, 160, 200, 240, 280], ys: [8, 9, 11, 12, 12, 13, 13, 14] },
+        },
+      },
+      'chart-sft': {
+        xLabel: 'SFT steps', xMax: 900, fake: true,
+        series: {
+          messaging: { xs: [0, 150, 300, 450, 600, 750, 900], ys: [10, 50, 75, 88, 93, 95, 96] },
+          encoded: { xs: [0, 150, 300, 450, 600, 750, 900], ys: [9, 30, 50, 62, 70, 74, 76] },
+          steg: { xs: [0, 150, 300, 450, 600, 750, 900], ys: [6, 10, 14, 17, 19, 20, 21] },
+        },
+      },
+    };
+
+    // Real data injected by generate_png.py from plots/figure_1/data.json
+    if (window.figData) {
+      const icl = window.figData.icl;
+      CHARTS['chart-icl'] = {
+        xLabel: 'n-shot examples', xMax: Math.max(...icl.shots), fake: false,
+        series: {
+          messaging: { xs: icl.shots, ys: icl.lines.steg_messaging.per_shot.map(s => s.mean * 100) },
+          encoded: { xs: icl.shots, ys: icl.lines.encoded_reasoning.per_shot.map(s => 100 * s.n_correct / s.n_total) },
+          steg: { xs: icl.shots, ys: icl.lines.steg_reasoning.per_shot.map(s => 100 * s.n_correct / s.n_total) },
+        },
+      };
+
+      const rl = window.figData.rl;
+      const rlSeries = {};
+      for (const [name, key] of [['messaging', 'steg_messaging'], ['encoded', 'encoded_reasoning'], ['steg', 'steg_reasoning']]) {
+        const pts = rl.runs[key].encoding_correct;
+        rlSeries[name] = { xs: pts.map(p => p[0]), ys: pts.map(p => p[1] * 100) };
+      }
+      CHARTS['chart-rl'] = {
+        xLabel: 'RL steps', fake: false, series: rlSeries,
+        xMax: Math.max(...Object.values(rlSeries).flatMap(s => s.xs)),
+      };
+
+      const sft = window.figData.sft;
+      const sftSeries = {};
+      for (const [name, key] of [['messaging', 'messaging'], ['encoded', 'encoding'], ['steg', 'reasoning']]) {
+        const pts = sft.runs[key].reasoning_correct;
+        sftSeries[name] = { xs: pts.map(p => p[0]), ys: pts.map(p => p[1] * 100) };
+      }
+      CHARTS['chart-sft'] = {
+        xLabel: 'SFT steps', fake: false, series: sftSeries,
+        xMax: Math.max(...Object.values(sftSeries).flatMap(s => s.xs)),
+        xTick: 10000, xTickLabel: '10,000',
+      };
+    }
+
+    function drawChart(id, { xLabel, xMax, series, fake, xTick, xTickLabel }) {
+      const canvas = document.getElementById(id);
+      scaleCanvas(canvas);
+      const rc = rcFor(canvas);
+      const L = 55, R = 455, T = 12, B = 200;
+      rc.line(L, B, R, B, { stroke: '#636e72', strokeWidth: 1.5, roughness: 0.5 });
+      rc.line(L, B, L, T, { stroke: '#636e72', strokeWidth: 1.5, roughness: 0.5 });
+
+      const ctx = canvas.getContext('2d');
+      ctx.font = '19px Nunito';
+      ctx.fillStyle = '#636e72';
+      ctx.textAlign = 'right';
+      ctx.fillText('100%', L - 7, T + 6);
+      ctx.fillText('50%', L - 7, (T + B) / 2 + 6);
+      ctx.fillText('0%', L - 7, B + 4);
+      ctx.textAlign = 'center';
+      ctx.fillText('0', L + 5, B + 22);
+      if (xTick) ctx.fillText(xTickLabel, L + (xTick / xMax) * (R - L), B + 22);
+      else ctx.fillText(String(xMax), R - 8, B + 22);
+      ctx.font = '600 24px Nunito';
+      ctx.fillText(xLabel, (L + R) / 2, B + 28);
+
+      for (const [name, { xs, ys }] of Object.entries(series)) {
+        const color = COLORS[name];
+        const pts = ys.map((v, i) => [L + (xs[i] / xMax) * (R - L), B - (v / 100) * (B - T)]);
+        for (let i = 0; i < pts.length - 1; i++) {
+          rc.line(pts[i][0], pts[i][1], pts[i + 1][0], pts[i + 1][1], { stroke: color, strokeWidth: 3, roughness: 0.8 });
+        }
+        const markerStep = Math.ceil(pts.length / 40);
+        pts.forEach(([x, y], i) => {
+          if (i % markerStep === 0 || i === pts.length - 1)
+            rc.circle(x, y, 8, { fill: color, fillStyle: 'solid', stroke: color, roughness: 0.5 });
+        });
+      }
+
+      if (fake) {
+        ctx.save();
+        ctx.translate((L + R) / 2, (T + B) / 2);
+        ctx.rotate(-0.25);
+        ctx.font = '800 52px Nunito';
+        ctx.fillStyle = 'rgba(214, 48, 49, 0.55)';
+        ctx.textAlign = 'center';
+        ctx.fillText('FAKE DATA', 0, 18);
+        ctx.restore();
+      }
+    }
+
+    // Align the post-bubble arrow and result under the speech bubble's center.
+    function positionResults() {
+      document.querySelectorAll('.pictogram').forEach(pic => {
+        const vflow = pic.querySelector('.vflow').getBoundingClientRect();
+        const bubble = pic.querySelector('.bubble-content').getBoundingClientRect();
+        const center = bubble.left + bubble.width / 2 - vflow.left;
+        pic.querySelector('.out-arrow').style.marginLeft = (center - 12) + 'px';
+        const result = pic.querySelector('.result-row');
+        const offset = result.querySelector('.robot')
+          ? center - 34
+          : center - result.querySelector('.answer').getBoundingClientRect().width / 2;
+        result.style.marginLeft = offset + 'px';
+      });
+    }
+
+    function drawDivider() {
+      const canvas = document.querySelector('.divider-canvas');
+      scaleCanvas(canvas);
+      const w = canvas.getBoundingClientRect().width;
+      rcFor(canvas).line(8, 5, w - 8, 5, { stroke: '#b2bec3', strokeWidth: 2, roughness: 0.8, strokeLineDash: [14, 12] });
+    }
+
+    document.fonts.ready.then(() => setTimeout(() => {
+      positionResults();
+      drawDivider();
+      document.querySelectorAll('.robot').forEach(c => drawRobot(c, c.dataset.color));
+      document.querySelectorAll('.arrow-canvas').forEach(drawArrow);
+      document.querySelectorAll('.down-arrow-canvas').forEach(drawDownArrow);
+      document.querySelectorAll('.bubble-container').forEach(drawBubble);
+      Object.entries(CHARTS).forEach(([id, cfg]) => drawChart(id, cfg));
+    }, 100));
+  </script>
+</body>
+</html>

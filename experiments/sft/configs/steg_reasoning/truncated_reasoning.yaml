@@ -1,0 +1,7 @@
+common_root: configs/steg_reasoning/steg_reasoning.yaml
+
+experiments:
+  - config:
+      name: truncated_steg_reasoning
+      function_kwargs:
+        min_prefix: true

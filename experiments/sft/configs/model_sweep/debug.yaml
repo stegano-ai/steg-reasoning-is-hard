@@ -1,0 +1,81 @@
+# Pipeline check for every sweep model: tokenizer + renderer + prefill datums + eval
+# scoring, a few steps each. The last entry additionally exercises the early-stop path
+# (threshold 0.0 fires at the first infrequent eval).
+common_root:
+  - configs/base.yaml
+  - configs/model_sweep/condition_steg_messaging.yaml
+
+experiments:
+  - config:
+      name: debug_nemotron3_super
+      function_kwargs:
+        model_name: "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16"
+        renderer_name: nemotron3_disable_thinking
+        sft:
+          learning_rate: 8.0e-5
+
+  - config:
+      name: debug_gptoss_120b
+      function_kwargs:
+        model_name: "openai/gpt-oss-120b"
+        renderer_name: gpt_oss_no_sysprompt
+        sft:
+          learning_rate: 1.138e-4
+
+  - config:
+      name: debug_inkling_small
+      function_kwargs:
+        model_name: "thinkingmachines/Inkling-Small"
+        renderer_name: tml_v0_no_thinking
+        sft:
+          learning_rate: 8.0e-5
+
+  - config:
+      name: debug_nemotron35_lightning
+      function_kwargs:
+        model_name: "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
+        renderer_name: nemotron3_ultra_disable_thinking
+        sft:
+          learning_rate: 1.219e-4
+
+  - config:
+      name: debug_inkling
+      function_kwargs:
+        model_name: "thinkingmachines/Inkling"
+        renderer_name: tml_v0_no_thinking
+        sft:
+          learning_rate: 5.333e-5
+
+  - config:
+      name: debug_kimi_k26
+      function_kwargs:
+        model_name: "moonshotai/Kimi-K2.6"
+        renderer_name: kimi_k26_disable_thinking
+        sft:
+          learning_rate: 4.571e-5
+
+  - config:
+      name: debug_earlystop_nemotron35_lightning
+      function_kwargs:
+        model_name: "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
+        renderer_name: nemotron3_ultra_disable_thinking
+        sft:
+          learning_rate: 1.219e-4
+        early_stop_threshold: 0.0
+
+common_patch:
+  - wandb_project: debug
+    log_file_path: results/model_sweep/debug/RUN_NAME/logs.txt
+    save_config_path: results/model_sweep/debug/RUN_NAME/config.yaml
+    function_kwargs:
+      log_path: results/model_sweep/debug/RUN_NAME
+      wandb_project: debug
+      n_train: 32
+      n_test: 8
+      n_eval: 8
+      batch_size: 8
+      infrequent_eval_every: 4
+      sft:
+        eval_every: 2
+        save_every: -1
+        num_epochs: 1

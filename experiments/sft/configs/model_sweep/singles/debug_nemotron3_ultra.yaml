@@ -1,0 +1,30 @@
+# Tiny pipeline check for Nemotron-3-Ultra (tokenizer + renderer + prefill datums).
+common_root:
+  - configs/base.yaml
+  - configs/model_sweep/condition_steg_messaging.yaml
+
+experiments:
+  - config:
+      name: debug_nemotron3_ultra
+      function_kwargs:
+        model_name: "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16"
+        renderer_name: nemotron3_ultra_disable_thinking
+        sft:
+          learning_rate: 4.0e-5
+
+common_patch:
+  - wandb_project: debug
+    log_file_path: results/model_sweep/debug/RUN_NAME/logs.txt
+    save_config_path: results/model_sweep/debug/RUN_NAME/config.yaml
+    function_kwargs:
+      log_path: results/model_sweep/debug/RUN_NAME
+      wandb_project: debug
+      n_train: 32
+      n_test: 8
+      n_eval: 8
+      batch_size: 8
+      infrequent_eval_every: 4
+      sft:
+        eval_every: 2
+        save_every: -1
+        num_epochs: 1

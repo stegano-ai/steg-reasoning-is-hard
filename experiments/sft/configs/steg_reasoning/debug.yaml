@@ -1,0 +1,16 @@
+common_root: configs/steg_reasoning/steg_reasoning.yaml
+
+experiments:
+  - config:
+      name: debug_steg_reasoning
+      wandb_project: debug
+      function_kwargs:
+        n_train: 32
+        n_test: 8
+        n_eval: 8
+        batch_size: 8
+        wandb_project: debug
+        infrequent_eval_every: 4
+        sft:
+          eval_every: 2
+          num_epochs: 1

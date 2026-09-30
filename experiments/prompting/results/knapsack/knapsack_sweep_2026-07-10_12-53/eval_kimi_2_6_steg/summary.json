@@ -1,0 +1,8 @@
+{
+  "n": 199,
+  "output_correct_mean": 0.4472361809045226,
+  "output_correct_max": 1.0,
+  "encoding_correct_mean": 0.5341289782244556,
+  "encoding_correct_max": 0.9166666666666666,
+  "n_failed": 1
+}

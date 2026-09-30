@@ -1,0 +1,7 @@
+# Claim 4: SFT markdown sum-mod-3 — Qwen3.6-35B-A3B, segment-3 final checkpoint
+# (2026-07-10_17-36-18, 012 branch). Compose fragment, not runnable alone.
+name: sft_summod3
+function_kwargs:
+  sampler:
+    base_model: Qwen/Qwen3.6-35B-A3B
+    model_path: tinker://d52e84a1-327f-57d0-976a-7dd788ed1d7a:train:0/sampler_weights/final

@@ -1,0 +1,16 @@
+# Full-state continuation of the 150-step reasoning_model_scheme run to 300 steps.
+# Resumes (weights + optimizer) from the batch-150 checkpoint in the cont300 folder:
+# tinker's get_last_checkpoint() finds checkpoints.jsonl there and restores with optimizer.
+# The cont300 folder is a copy of train_grpo_..._reasoning_model_scheme_2026-07-08_15-56-32.
+common_root:
+  - configs/reasoning_model_scheme.yaml
+  - time_stamp_name: false
+    log_file_path: results/reasoning_model_scheme/reasoning_model_scheme_cont300/logs.txt
+    save_config_path: results/reasoning_model_scheme/reasoning_model_scheme_cont300/config.yaml
+    function_kwargs:
+      max_train_samples: 1200
+      log_path: results/reasoning_model_scheme/reasoning_model_scheme_cont300
+
+experiments:
+  - config:
+      name: reasoning_model_scheme_continuation

@@ -1,0 +1,21 @@
+# a5ws steg reasoning continuation to 10x messaging steps for nemotron35_lightning: resumes the 2x
+# run's final checkpoint (messaging S=1900, 2x done, +15200 to cumulative 10x).
+# Launched 2026-08-21, user-authorized ($250 envelope).
+common_root:
+  - configs/base.yaml
+  - configs/model_sweep/condition_steg_reasoning_a5ws.yaml
+
+experiments:
+  - config:
+      name: steg_reasoning_a5ws_nemotron35_lightning_cont10x
+      function_kwargs:
+        model_name: "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
+        renderer_name: nemotron3_ultra_disable_thinking
+        sft:
+          learning_rate: 1.219e-4
+          num_epochs: 10
+          max_steps: 15200
+          load_checkpoint_path: tinker://af736cd6-0e6a-57f3-aca8-baba2065b066:train:0/weights/final
+
+common_patch:
+  - wandb_group: model_sweep/steg_reasoning_a5ws

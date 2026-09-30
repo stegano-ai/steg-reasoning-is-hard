@@ -1,0 +1,17 @@
+common_root: configs/reasoning.yaml
+
+experiments:
+  - config:
+      name: debug
+      wandb_project: debug
+      function_kwargs:
+        wandb_project: debug
+        batch_size: 2
+        group_size: 2
+        eval_group_size: 2
+        max_train_samples: 4
+        max_test_samples: 2
+        log_completions_per_step: -1
+        grpo:
+          eval_every: 1
+          save_every: -1

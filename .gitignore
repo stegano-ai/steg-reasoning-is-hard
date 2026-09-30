@@ -1,0 +1,39 @@
+__pycache__/
+*.pyc
+.venv/
+.venv
+.DS_Store
+wandb/
+tmp/
+*.bin
+*.safetensors
+*.pth
+#tmp/
+*.egg-info/
+dist/
+build/
+.claude/*
+
+.secrets
+
+
+
+# Ignore debug runs in results directories
+**/results/**/*debug*/
+**/nohup.out
+*.out
+*.log
+**/logs.txt
+
+**/code.diff
+**/timing_spans.jsonl
+**/iteration_*/
+# Large generated completion files
+experiments/sft/results/generate/*/natural_completions.jsonl
+
+# DraCor corpus cache (regenerated on demand)
+lib/main_tasks/_dracor_cache/
+
+# Raw eval transcripts (regenerable); metrics extracted to results_metrics/*.csv
+**/completions.jsonl
+experiments/monitor_benchmarking/results/*/ratings.jsonl

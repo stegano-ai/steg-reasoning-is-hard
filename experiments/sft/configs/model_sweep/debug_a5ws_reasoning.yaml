@@ -1,0 +1,33 @@
+# The ball_and_cups reasoning-condition debug entry, rooted on the a5ws reasoning
+# condition directly (the combined debug file leaked messaging's vocab_size into the
+# side_task override via recursive merge).
+common_root:
+  - configs/base.yaml
+  - configs/model_sweep/condition_steg_reasoning_a5ws.yaml
+
+experiments:
+  - config:
+      name: debug_a5ws_reasoning_nemotron3_super
+      function_kwargs:
+        model_name: "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16"
+        renderer_name: nemotron3_disable_thinking
+        sft:
+          learning_rate: 8.0e-5
+
+common_patch:
+  - wandb_project: debug
+    log_file_path: results/model_sweep/debug/RUN_NAME/logs.txt
+    save_config_path: results/model_sweep/debug/RUN_NAME/config.yaml
+    function_kwargs:
+      log_path: results/model_sweep/debug/RUN_NAME
+      wandb_project: debug
+      n_train: 32
+      n_test: 8
+      n_eval: 8
+      batch_size: 8
+      infrequent_eval_every: 4
+      sft:
+        eval_every: 2
+        save_every: -1
+        num_epochs: 1
+        max_steps: null

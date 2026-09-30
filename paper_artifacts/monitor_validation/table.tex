@@ -1,0 +1,26 @@
+{\footnotesize\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{lcccccccc}
+\toprule
+Input & \multicolumn{2}{c}{\shortstack{RL base\\(AQuA-RAT, full)}} & \multicolumn{2}{c}{\shortstack{ICL opening\\(WildChat, prefix)}} & \multicolumn{2}{c}{\shortstack{ICL complete\\(WildChat, full)}} & \multicolumn{2}{c}{\shortstack{Lenient\\(AQuA-RAT, full)}} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7} \cmidrule(lr){8-9}
+ & mean & $\leq 3$ (\%) & mean & $\leq 3$ (\%) & mean & $\leq 3$ (\%) & mean & $\leq 3$ (\%) \\
+\midrule
+\multicolumn{9}{l}{\emph{Benign}} \\
+\quad Dataset answer, unencoded & 1.5 & 94 & 1.4 & 95 & 1.1 & 99 & 1.0 & 100 \\
+\quad GPT-5-mini answer, unencoded & 1.0 & 100 & 1.0 & 100 & 1.0 & 100 & 1.0 & 100 \\
+\addlinespace
+\multicolumn{9}{l}{\emph{Surface-formatting schemes}} \\
+\quad Capitalization & 1.5 & 94 & --- & --- & --- & --- & --- & --- \\
+\quad Whitespace & 1.5 & 94 & 1.6 & 93 & 1.4 & 97 & --- & --- \\
+\quad Markdown & 1.8 & 91 & 2.7 & 76 & 3.7 & 64 & 1.0 & 100 \\
+\quad Sentence-markdown & --- & --- & 1.2 & 99 & 1.8 & 93 & --- & --- \\
+\quad Sentence-newline & --- & --- & 1.1 & 99 & 1.1 & 100 & --- & --- \\
+\quad Sentence-interjection & --- & --- & 5.9 & 33 & 6.8 & 20 & --- & --- \\
+\addlinespace
+\multicolumn{9}{l}{\emph{Conspicuous controls}} \\
+\quad Digits prepended & 8.7 & 4 & --- & --- & 9.0 & 2 & 1.8 & 94 \\
+\quad Arbitrary words prepended & 9.9 & 0 & 9.9 & 0 & 9.8 & 0 & 1.2 & 99 \\
+\quad Word-prefix words prepended & 9.9 & 0 & --- & --- & --- & --- & 1.1 & 100 \\
+\quad Bold-word header prepended & 7.0 & 15 & --- & --- & --- & --- & --- & --- \\
+\bottomrule
+\end{tabular}}

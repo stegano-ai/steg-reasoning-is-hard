@@ -1,0 +1,59 @@
+# Model sweep, steg messaging condition. Run this (and encoded_reasoning.yaml) to
+# completion first — both early-stop at eval/reasoning_correct >= 0.95 — then calibrate
+# steg_reasoning.yaml's per-model max_steps to 2-3x the stopping step.
+#
+# renderer_name: each model gets its THINKING-DISABLED renderer. score_local reads the
+# encoded values out of the assistant's `content`, so a renderer that primes an open
+# think block at generation routes the answer into a reasoning segment where scoring
+# can't see it, and the run silently reads 0.
+#
+# learning_rate: 1.6e-4 is calibrated for Qwen3.6-35B-A3B (hidden size 2048); other
+# models scale it by 2048 / hidden_size (LoRA LR ∝ 1/hidden_size).
+
+common_root:
+  - configs/base.yaml
+  - configs/model_sweep/condition_steg_messaging.yaml
+
+experiments:
+  - config:
+      name: steg_messaging_nemotron3_super
+      function_kwargs:
+        model_name: "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16"
+        renderer_name: nemotron3_disable_thinking
+        sft:
+          learning_rate: 8.0e-5   # hidden 4096
+
+  - config:
+      name: steg_messaging_gptoss_120b
+      function_kwargs:
+        model_name: "openai/gpt-oss-120b"
+        # harmony channel format: the generation prompt stops at `<|start|>assistant` and
+        # lets the model pick its own channel. Until SFT teaches it to open `final`, it may
+        # emit `analysis` and score 0 — expect a flat first few evals. `no_sysprompt` so no
+        # ChatGPT system prompt is injected.
+        renderer_name: gpt_oss_no_sysprompt
+        sft:
+          learning_rate: 1.138e-4   # hidden 2880
+
+  - config:
+      name: steg_messaging_inkling_small
+      function_kwargs:
+        model_name: "thinkingmachines/Inkling-Small"
+        # NOT a stock cookbook renderer: lib/inkling_renderer.py pins tml_v0's continuous
+        # thinking effort to 0 and registers it under this name (train_sft imports it for
+        # the side effect). The stock tml_v0 default (0.9) would route answers into a
+        # reasoning segment scoring can't see.
+        renderer_name: tml_v0_no_thinking
+        sft:
+          learning_rate: 8.0e-5   # hidden 4096
+
+  - config:
+      name: steg_messaging_nemotron35_lightning
+      function_kwargs:
+        model_name: "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
+        renderer_name: nemotron3_ultra_disable_thinking
+        sft:
+          learning_rate: 1.219e-4   # hidden 2688
+
+common_patch:
+  - wandb_group: model_sweep/steg_messaging

@@ -1,0 +1,9 @@
+# Model-sweep SFT crosser: Nemotron-3-Super-120B, mod-3 markdown steg reasoning crossed
+# at cumulative step 6800 = 9.7x messaging (0.969/exact 0.85). Sampler weights converted
+# from the early_stop_54 state checkpoint. Compose fragment, not runnable alone.
+name: sft_nemotron_super
+function_kwargs:
+  sampler:
+    base_model: nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16
+    renderer_name: nemotron3_disable_thinking
+    model_path: tinker://6e554c9b-b963-5706-9182-8a68329ea080:train:0/sampler_weights/errinj_nemotron3_super_cross

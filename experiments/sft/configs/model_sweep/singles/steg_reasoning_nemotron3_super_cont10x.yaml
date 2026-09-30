@@ -1,0 +1,21 @@
+# Continuation to 10x messaging steps (messaging converged at 700): resumes the 2x run's
+# final checkpoint (weights only, fresh optimizer) and trains the remaining 8x. Launched
+# 2026-08-14, user-authorized.
+common_root:
+  - configs/base.yaml
+  - configs/model_sweep/condition_steg_reasoning.yaml
+
+experiments:
+  - config:
+      name: steg_reasoning_nemotron3_super_cont10x
+      function_kwargs:
+        model_name: "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16"
+        renderer_name: nemotron3_disable_thinking
+        sft:
+          learning_rate: 8.0e-5   # hidden 4096
+          num_epochs: 10
+          max_steps: 5600
+          load_checkpoint_path: tinker://abc7c0b6-85e3-5068-b5f7-08a92b631420:train:0/weights/final
+
+common_patch:
+  - wandb_group: model_sweep/steg_reasoning

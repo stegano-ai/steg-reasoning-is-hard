@@ -1,0 +1,30 @@
+# Shared base for all prompting experiments. WildChat cover task, no wandb anywhere.
+# Results are content-addressed: each cell owns results/<group>/<cell_name>/ (group from
+# wandb_group, no timestamps) holding config.yaml + completions.jsonl. Reruns top up
+# missing sample indices up to n_eval; any config change other than n_eval crashes and
+# asks you to delete the cell folder. Analysis is separate — generation only writes rows.
+name: eval
+function_name: generate
+time_stamp_name: false
+
+function_kwargs:
+  sampler:
+    kind: openrouter
+    model: openai/gpt-5.5
+  log_path: results/RUN_GROUP/RUN_NAME
+  n_eval: 20
+  pool_size: 1200
+  n_shot: 2
+  shot_pool_size: 200
+  eval_max_tokens: 1024
+  temperature: 0.0
+  seed: 0
+  system_prompt: null
+  monitor: null
+
+  main_task:
+    type: wildchat
+    scheme: capitalization
+    n_train: 500
+    n_test: 500
+    n_symbols: 3

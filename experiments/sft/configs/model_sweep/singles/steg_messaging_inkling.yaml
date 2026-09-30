@@ -1,0 +1,18 @@
+# Frontier phase 1, Inkling (AA 41). TML recipe validated on Inkling-Small 2026-08-14:
+# unscaled lr 1.6e-4 + closed_prefix_targets (see tml-inkling-lr notes).
+# Launched 2026-08-15, user-authorized.
+common_root:
+  - configs/base.yaml
+  - configs/model_sweep/condition_steg_messaging.yaml
+
+experiments:
+  - config:
+      name: steg_messaging_inkling
+      function_kwargs:
+        model_name: "thinkingmachines/Inkling"
+        renderer_name: tml_v0_no_thinking
+        closed_prefix_targets: true
+        sft:
+          learning_rate: 1.6e-4
+common_patch:
+  - wandb_group: model_sweep/steg_messaging
