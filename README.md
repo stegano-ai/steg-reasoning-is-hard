@@ -5,7 +5,7 @@ Code, data and lab notebooks accompanying the paper
 > **Learning Steganography Is Easy, Learning Steganographic Reasoning Is Hard**
 > Julian Schulz, Lukas Fülle, Rieke Fruengel
 > NeurIPS 2026 Workshop AI4GOOD: Trustworthy AI for Good
-> [arXiv:XXXX.XXXXX](https://arxiv.org/abs/XXXX.XXXXX)
+> [arXiv:2609.39838](https://arxiv.org/abs/2609.39838)
 
 ## Abstract
 
@@ -120,7 +120,7 @@ works as a short guide to the code.
   author    = {Schulz, Julian and F{\"u}lle, Lukas and Fruengel, Rieke},
   booktitle = {NeurIPS 2026 Workshop AI4GOOD: Trustworthy AI for Good},
   year      = {2026},
-  url       = {https://arxiv.org/abs/XXXX.XXXXX}
+  url       = {https://arxiv.org/abs/2609.39838}
 }
 ```
 
